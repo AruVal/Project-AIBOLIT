@@ -70,23 +70,36 @@ p {
   margin-right: 2.78vw;
 }
 
-.wrapper1460 {
+.container {
   max-width: 1460px;
   margin: 0 auto;
 }
 
+.enroll {
+  display: grid;
+  grid-template-columns: 1fr 1.8fr;
+}
+
 .main-title {
   font-family: "SchoolBook";
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 80px;
   line-height: 110px;
   color: #080606;
+}
+
+.enroll__title {
+  margin: 160px 0 0;
 }
 
 .breadcrumbs {
   display: flex;
   align-items: center;
   gap: 6px;
+  padding: 75px 0 60px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #FFC59E;
 }
 
 .breadcrumps__arrow {
@@ -98,12 +111,17 @@ p {
 }
 
 .breadcrumps__title {
-  color: #FFC59E;
   text-transform: uppercase;
   font-family: "Futura New";
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 20px;
   line-height: 20px;
+}
+
+.enroll__btns {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .enroll__btn {

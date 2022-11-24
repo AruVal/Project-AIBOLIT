@@ -1,20 +1,33 @@
 @import "./colors";
 @import "./mixins";
 
-.wrapper1460 {
+.container {
   max-width: 1460px;
   margin: 0 auto;
 }
 
+.enroll {
+  display: grid;
+  grid-template-columns: 1fr 1.8fr
+}
+
 .main-title {
-  @include SchoolBook (400px, 80px, 110px);
+  @include SchoolBook (400, 80px, 110px);
   color: $text-dark;
+}
+
+.enroll__title {
+  margin: 160px 0 0;
 }
 
 .breadcrumbs {
   display: flex;
   align-items: center;
   gap: 6px;
+  padding: 75px 0 60px;
+  cursor: pointer;
+  text-decoration: none;
+  color: $button-color;
 }
 
 .breadcrumps__arrow {
@@ -26,9 +39,14 @@
 }
 
 .breadcrumps__title {
-  color: $button-color;
   text-transform: uppercase;
-  @include Futura-New (700px, 20px, 20px);
+  @include Futura-New (700, 20px, 20px);
+}
+
+.enroll__btns {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .enroll__btn {
