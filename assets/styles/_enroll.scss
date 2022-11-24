@@ -1,7 +1,46 @@
 @import "./colors";
 @import "./mixins";
 
-.wrapper {
-    max-width: 1460px;
-    color: red;
+.wrapper1460 {
+  max-width: 1460px;
+  margin: 0 auto;
+}
+
+.main-title {
+  @include SchoolBook (400px, 80px, 110px);
+  color: $text-dark;
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.breadcrumps__arrow {
+  width: 7px;
+  height: 12px;
+  background-image: url('../assets/images/landing/ico/arrow_small_prev.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.breadcrumps__title {
+  color: $button-color;
+  text-transform: uppercase;
+  @include Futura-New (700px, 20px, 20px);
+}
+
+.enroll__btn {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  max-width: 909px;
+  padding: 32px;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+
+  &:hover {
+    border: 1px solid $inactive-link-color;
+  }
 }
