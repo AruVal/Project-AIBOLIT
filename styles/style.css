@@ -58,6 +58,17 @@
   font-weight: 700;
   font-style: normal;
 }
+img {
+  max-width: 100%;
+}
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
 .web-header {
   width: 100vw;
 }
@@ -81,6 +92,10 @@
 .web-header__menu-item {
   font-family: "Futura New";
   font-weight: 700;
+  font-size: 2.22vh;
+  line-height: 2.22vh;
   color: #C3B9B5;
   text-decoration: none;
+  margin-left: 2.78vw;
+  margin-right: 2.78vw;
 }/*# sourceMappingURL=style.css.map */

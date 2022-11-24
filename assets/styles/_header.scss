@@ -2,6 +2,17 @@
 @import "./fonts";
 @import "./mixins";
 
+img {
+    max-width: 100%;
+}
+
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
 .web-header {
     width: 100vw;
 }
@@ -19,7 +30,9 @@
     list-style-type: none;
 }
 .web-header__menu-item {
-    @include Futura-New(700);
+    @include Futura-New(700, 2.22vh, 2.22vh);
     color: $inactive-link-color;
     text-decoration: none;
+    margin-left: 2.78vw;
+    margin-right: 2.78vw;
 }

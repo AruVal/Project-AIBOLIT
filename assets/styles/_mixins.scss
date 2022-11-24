@@ -1,11 +1,13 @@
-@mixin SchoolBook ($fontweight, $fontsize, $lineheight){
-    font-family: 'SchoolBook';
+@mixin SchoolBook($fontweight, $fontsize, $lineheight) {
+    font-family: "SchoolBook";
     font-weight: $fontweight;
     font-size: $fontsize;
     line-height: $lineheight;
 }
 
-@mixin Futura-New($font-weight) {
-    font-family: 'Futura New';
+@mixin Futura-New($font-weight, $fontsize, $lineheight) {
+    font-family: "Futura New";
     font-weight: $font-weight;
+    font-size: $fontsize;
+    line-height: $lineheight;
 }
