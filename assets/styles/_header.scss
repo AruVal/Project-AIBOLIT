@@ -5,33 +5,77 @@ img {
     max-width: 100%;
 }
 
-p {
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-}
-
 .web-header {
-    width: 100vw;
+    display: flex;
 }
 .web-header__container {
+    width: 100vw;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    margin-left: 6.31vw;
+    margin-top: 9.33vh;
+    margin-right: 5.55vw;
+    margin-bottom: 2.07vh;
 }
 .web-header__logo {
-    width: 5%;
+    width: 10vmax;
+    margin-right: auto;
+    display: flex;
 }
 .web-header__menu {
     display: flex;
     flex-direction: row;
     justify-content: center;
     list-style-type: none;
+    flex-wrap: wrap;
 }
-.web-header__menu-item {
+
+.web-header__menu-item,
+.web-header__location-text {
     @include Futura-New(700, 2.22vh, 2.22vh);
+}
+
+.web-header__menu-item {
     color: $inactive-link-color;
-    text-decoration: none;
     margin-left: 2.78vw;
     margin-right: 2.78vw;
+
+    &:hover {
+        color: $text-custom;
+    }
+}
+
+.web-header__location {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.web-header__location-img {
+    &:hover {
+        color: $text-custom;
+    }
+}
+.web-header__location-text {
+    color: $button-color;
+    margin-left: 1em;
+    &:hover {
+        color: $text-custom;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .web-header__location {
+        display: none;
+    }
+    .web-header__menu {
+        gap: 1vw;
+    }
+    .web-header__logo {
+        width: 40%;
+    }
+    .web-header__container {
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
 }
