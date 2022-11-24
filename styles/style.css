@@ -1,3 +1,86 @@
-@import url(./colors);
-@import url(./fonts);
-@import url(./mixins);/*# sourceMappingURL=style.css.map */
+@font-face {
+  font-family: "Futura New";
+  src: local("Futura New Book Reg"), local("Futura-New-Book-Reg"), url("/assets/fonts/futura-new-400/FuturaNewBook-Reg.woff2") format("woff2"), url("/assets/fonts/futura-new-400/FuturaNewBook-Reg.woff") format("woff"), url("/assets/fonts/futura-new-400/FuturaNewBook-Reg.ttf") format("ttf"), url("/assets/fonts/futura-new-400/FuturaNewBook-Reg.eot") format("eot");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Futura New";
+  src: local("Futura New Medium Reg"), local("Futura-New-Medium-Reg"), url("/assets/fonts/futura-new-500/FuturaNewMedium-Reg.woff2") format("woff2"), url("/assets/fonts/futura-new-500/FuturaNewMedium-Reg.woff") format("woff"), url("/assets/fonts/futura-new-500/FuturaNewMedium-Reg.ttf") format("ttf"), url("/assets/fonts/futura-new-500/FuturaNewMedium-Reg.eot") format("eot");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Futura New";
+  src: local("Futura New Bold Reg"), local("Futura-New-Bold-Reg"), url("/assets/fonts/futura-new-700/FuturaNewBold-Reg.woff2") format("woff2"), url("/assets/fonts/futura-new-700/FuturaNewBold-Reg.woff") format("woff"), url("/assets/fonts/futura-new-700/FuturaNewBold-Reg.ttf") format("ttf"), url("/assets/fonts/futura-new-700/FuturaNewBold-Reg.eot") format("eot");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SchoolBook";
+  src: local("SchoolBook-Reg"), url("/assets/fonts/schoolbook-400/schoolbook-cyrillic.woff2") format("woff2"), url("/assets/fonts/schoolbook-400/schoolbook-cyrillic.woff") format("woff"), url("/assets/fonts/schoolbook-400/schoolbook-cyrillic.ttf") format("ttf"), url("/assets/fonts/schoolbook-400/schoolbook-cyrillic.eot") format("eot");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SchoolBook";
+  src: local("SchoolBook-Bold"), url("/assets/fonts/schoolbook-700/schoolbook-bold-cyrillic.woff2") format("woff2"), url("/assets/fonts/schoolbook-700/schoolbook-bold-cyrillic.woff") format("woff"), url("/assets/fonts/schoolbook-700/schoolbook-bold-cyrillic.ttf") format("ttf"), url("/assets/fonts/schoolbook-700/schoolbook-bold-cyrillic.eot") format("eot");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Futura New";
+  src: local("Futura New Book Reg"), local("Futura-New-Book-Reg"), url("/assets/fonts/futura-new-400/FuturaNewBook-Reg.woff2") format("woff2"), url("/assets/fonts/futura-new-400/FuturaNewBook-Reg.woff") format("woff"), url("/assets/fonts/futura-new-400/FuturaNewBook-Reg.ttf") format("ttf"), url("/assets/fonts/futura-new-400/FuturaNewBook-Reg.eot") format("eot");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Futura New";
+  src: local("Futura New Medium Reg"), local("Futura-New-Medium-Reg"), url("/assets/fonts/futura-new-500/FuturaNewMedium-Reg.woff2") format("woff2"), url("/assets/fonts/futura-new-500/FuturaNewMedium-Reg.woff") format("woff"), url("/assets/fonts/futura-new-500/FuturaNewMedium-Reg.ttf") format("ttf"), url("/assets/fonts/futura-new-500/FuturaNewMedium-Reg.eot") format("eot");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Futura New";
+  src: local("Futura New Bold Reg"), local("Futura-New-Bold-Reg"), url("/assets/fonts/futura-new-700/FuturaNewBold-Reg.woff2") format("woff2"), url("/assets/fonts/futura-new-700/FuturaNewBold-Reg.woff") format("woff"), url("/assets/fonts/futura-new-700/FuturaNewBold-Reg.ttf") format("ttf"), url("/assets/fonts/futura-new-700/FuturaNewBold-Reg.eot") format("eot");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SchoolBook";
+  src: local("SchoolBook-Reg"), url("/assets/fonts/schoolbook-400/schoolbook-cyrillic.woff2") format("woff2"), url("/assets/fonts/schoolbook-400/schoolbook-cyrillic.woff") format("woff"), url("/assets/fonts/schoolbook-400/schoolbook-cyrillic.ttf") format("ttf"), url("/assets/fonts/schoolbook-400/schoolbook-cyrillic.eot") format("eot");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SchoolBook";
+  src: local("SchoolBook-Bold"), url("/assets/fonts/schoolbook-700/schoolbook-bold-cyrillic.woff2") format("woff2"), url("/assets/fonts/schoolbook-700/schoolbook-bold-cyrillic.woff") format("woff"), url("/assets/fonts/schoolbook-700/schoolbook-bold-cyrillic.ttf") format("ttf"), url("/assets/fonts/schoolbook-700/schoolbook-bold-cyrillic.eot") format("eot");
+  font-weight: 700;
+  font-style: normal;
+}
+.web-header {
+  width: 100vw;
+}
+
+.web-header__container {
+  display: flex;
+  flex-direction: row;
+}
+
+.web-header__logo {
+  width: 5%;
+}
+
+.web-header__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.web-header__menu-item {
+  font-family: "Futura New";
+  font-weight: 700;
+  color: #C3B9B5;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */

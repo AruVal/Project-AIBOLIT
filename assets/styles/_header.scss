@@ -1,0 +1,25 @@
+@import "./colors";
+@import "./fonts";
+@import "./mixins";
+
+.web-header {
+    width: 100vw;
+}
+.web-header__container {
+    display: flex;
+    flex-direction: row;
+}
+.web-header__logo {
+    width: 5%;
+}
+.web-header__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+}
+.web-header__menu-item {
+    @include Futura-New(700);
+    color: $inactive-link-color;
+    text-decoration: none;
+}
