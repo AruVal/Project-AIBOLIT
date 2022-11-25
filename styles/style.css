@@ -176,4 +176,57 @@ img {
 }
 .enroll__btn:hover {
   border: 1px solid #C3B9B5;
+}
+
+.cards__link {
+  display: block;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+  padding: 24px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  cursor: pointer;
+}
+.card:hover .card__ico {
+  filter: invert(24%) sepia(5%) saturate(2501%) hue-rotate(324deg) brightness(101%) contrast(87%);
+}
+
+.card__ico {
+  width: 110px;
+  height: 110px;
+  margin-top: 22px;
+  background-image: url("../assets/images/landing/services/stethoscope.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+  filter: invert(90%) sepia(28%) saturate(6487%) hue-rotate(310deg) brightness(135%) contrast(104%);
+}
+
+.subtitle {
+  font-family: "SchoolBook";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.card__title {
+  color: #59443F;
+}
+
+.card__desc {
+  font-family: "Futura New";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #59443F;
+}
+
+.card__row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */
