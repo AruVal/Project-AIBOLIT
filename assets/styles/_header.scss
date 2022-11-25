@@ -40,9 +40,47 @@ img {
     color: $inactive-link-color;
     margin-left: 2.78vw;
     margin-right: 2.78vw;
+    transition: 0.3s;
 
     &:hover {
         color: $text-custom;
+    }
+}
+
+.web-header__dropdown-link {
+    display: inline-block;
+    &:hover .web-header__dropdown-menu {
+        display: block;
+    }
+    &:hover .web-header__menu-item {
+        color: $text-custom;
+    }
+}
+
+.web-header__dropdown-menu {
+    display: none;
+    position: absolute;
+    width: 15.625vmax;
+    z-index: 1;
+    background-color: $white;
+    box-shadow: 2px 2px 20px rgba(155, 82, 50, 0.1);
+    border-radius: 10%;
+    padding: 2.31vh 0;
+    box-sizing: content-box;
+    transition: 0.3s;
+    & > a {
+        @include Futura-New(400, 2.22vh, 2.22vh);
+        color: $text-dark;
+        padding: 1.39vmin 2.6vmax;
+        padding-right: 0;
+        display: block;
+        text-align: left;
+
+        &:hover {
+            @include Futura-New(500, 2.22vh, 2.22vh);
+            padding-left: 3.33vmax;
+            transition: 0.3s;
+        }
     }
 }
 
@@ -50,18 +88,20 @@ img {
     display: flex;
     align-items: center;
     margin-left: auto;
+    transition: 0.3s;
+    filter: invert(77%) sepia(26%) saturate(697%) hue-rotate(328deg)
+        brightness(105%) contrast(101%);
+
+    &:hover {
+        filter: invert(25%) sepia(22%) saturate(532%) hue-rotate(325deg)
+            brightness(94%) contrast(86%);
+    }
 }
 .web-header__location-img {
-    &:hover {
-        color: $text-custom;
-    }
 }
 .web-header__location-text {
-    color: $button-color;
     margin-left: 1em;
-    &:hover {
-        color: $text-custom;
-    }
+    color: #000;
 }
 
 @media screen and (max-width: 768px) {
@@ -70,6 +110,7 @@ img {
     }
     .web-header__menu {
         gap: 1vw;
+        justify-content: end;
     }
     .web-header__logo {
         width: 40%;
@@ -77,5 +118,13 @@ img {
     .web-header__container {
         margin-top: 1vh;
         margin-bottom: 1vh;
+    }
+    .web-header__dropdown-menu {
+        right: 0;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .web-header__dropdown-menu > a:hover {
+        padding-left: 2.6vmax;
     }
 }

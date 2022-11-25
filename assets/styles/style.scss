@@ -1,6 +1,11 @@
 @import "./colors";
 @import "./fonts";
 @import "./mixins";
+
+body {
+    color: #fffefe;
+}
+
 @import "./header";
 @import "./enroll";
 @import "./servises";
