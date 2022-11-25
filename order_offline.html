@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/styles/normalize.css" />
+  <link rel="stylesheet" href="/styles/style.css" />
+  <title>Оформление заказа</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="order section">
+      <a class="breadcrumbs" href="./enroll.html">
+        <div class="breadcrumps__arrow"></div>
+        <p class="breadcrumps__title">Назад</p>
+      </a>
+      <div class="section__row">
+        <h1 class="section__title main-title">Оформление заказа</h1>
+        <div class="section__part">
+          <form class="order__form">
+            <input class="order__input desc order__form_input order__input_name" type="text" name="name" id="full-name"
+              placeholder="ФИО" required value="Константинопольский Константин Константинович">
+            <input class="order__input desc order__form_input order__input_tel" type="tel" name="tel" id="tel"
+              placeholder="+7 (999) 999 99 99"
+              pattern="\D[^0-9]\d[0-9]\s\D[^0-9][0-9]{3}\D [^0-9]\s[0-9]{3}\s[0-9]{3}\s[0-9]{2}" required
+              value="+7 (999) 756 95 99">
+            <input class="order__input desc order__form_input order__input_data" type="text" name="data" id="data-time"
+              placeholder="Желаемая дата и время приема" required value="22.07 в 10:00">
+            <textarea class="order__input desc order__form_input order__input_issue" name="comment" id="comment"
+              placeholder="Кратко опишите проблему" required>Проблема есть</textarea>
+          </form>
+          <a class="order__btn" href="#">
+            <div>Записаться</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

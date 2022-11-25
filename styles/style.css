@@ -130,7 +130,7 @@ img {
   color: #080606;
 }
 
-.enroll__title {
+.section__title {
   grid-area: title;
   margin: 0 0 clamp(20px, 2.6vw, 50px);
 }
@@ -167,23 +167,26 @@ img {
   line-height: clamp(16px, 1.1vw, 20px);
 }
 
-.enroll__row {
+.section__row {
   display: grid;
   grid-template-columns: 28.64vw 47.36vw;
-  grid-template-areas: "title btns";
+  grid-template-areas: "title part";
 }
 @media (max-width: 1024px) {
-  .enroll__row {
+  .section__row {
     grid-template-columns: 100%;
-    grid-template-areas: "title" "btns";
+    grid-template-areas: "title" "part";
   }
+}
+
+.section__part {
+  grid-area: part;
 }
 
 .enroll__btns {
   display: flex;
   flex-direction: column;
   gap: clamp(12px, 1.25vw, 24px);
-  grid-area: btns;
 }
 
 .enroll__btn {
@@ -193,6 +196,8 @@ img {
   padding: clamp(16px, 1.7vw, 32px);
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
   border-radius: clamp(14px, 1vw, 20px);
+  color: #080606;
+  cursor: pointer;
 }
 .enroll__btn:hover {
   border: 1px solid #C3B9B5;
@@ -249,4 +254,110 @@ img {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+}
+
+.order__form {
+  display: grid;
+  grid-template: 1fr 1fr 3fr/1fr 1fr;
+  grid-template-areas: "name name" "tel data" "issue issue";
+  gap: clamp(12px, 1.25vw, 24px);
+}
+@media (max-width: 768px) {
+  .order__form {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 1fr) 3fr;
+    grid-template-areas: "name" "tel" "data" "issue";
+  }
+}
+.order__form_input {
+  border: 1px solid #EDE9E8;
+}
+.order__input {
+  padding: 16px;
+  border-radius: clamp(14px, 1vw, 20px);
+  background-color: #fff;
+}
+.order__input::placeholder {
+  color: #C3B9B5;
+}
+.order__input_name {
+  grid-area: name;
+}
+.order__input_tel {
+  grid-area: tel;
+}
+.order__input_data {
+  grid-area: data;
+}
+.order__input_issue {
+  grid-area: issue;
+  resize: none;
+}
+.order__payment {
+  margin-top: 24px;
+  padding: 16px 16px 0;
+  border-radius: clamp(14px, 1vw, 20px);
+  background-color: #EDE9E8;
+}
+.order__row {
+  display: grid;
+  grid-template: 1fr/1fr 1fr;
+  grid-template-areas: "payment-type capcha-form";
+  gap: clamp(12px, 1.25vw, 24px);
+}
+@media (max-width: 1680px) {
+  .order__row {
+    grid-template: 1fr/1fr;
+    grid-template-areas: "payment-type" "capcha-form";
+  }
+}
+.order__payment-type {
+  grid-area: payment-type;
+}
+.order__payment-capcha-form {
+  grid-area: capcha-form;
+  display: flex;
+  gap: 8px;
+}
+@media (max-width: 1680px) {
+  .order__payment-capcha-form {
+    justify-content: center;
+  }
+}
+@media (max-width: 540px) {
+  .order__payment-capcha-form {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.order__payment-captcha {
+  width: 209px;
+  height: 57px;
+  background-image: url("../assets/images/landing/captcha.png");
+  background-size: contain;
+  border-radius: clamp(14px, 1vw, 20px);
+}
+.order__payment-captcha_input {
+  width: 209px;
+  border: none;
+}
+.order__desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 16px 0;
+}
+.order__btn {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.desc {
+  font-family: "Futura New";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #59443F;
 }/*# sourceMappingURL=style.css.map */

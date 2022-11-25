@@ -16,7 +16,7 @@
   color: $text-dark;
 }
 
-.enroll__title {
+.section__title {
   grid-area: title;
   margin: 0 0 clamp(20px, 2.6vw, 50px);
 }
@@ -49,23 +49,26 @@
   @include Futura-New (700, clamp(16px, 1.1vw, 20px), clamp(16px, 1.1vw, 20px));
 }
 
-.enroll__row {
+.section__row {
   display: grid;
   grid-template-columns: 28.64vw 47.36vw;
-  grid-template-areas: "title btns";
+  grid-template-areas: "title part";
 
   @media (max-width: 1024px) {
     grid-template-columns: 100%;
     grid-template-areas: "title"
-      "btns";
+      "part";
   }
+}
+
+.section__part {
+  grid-area: part;
 }
 
 .enroll__btns {
   display: flex;
   flex-direction: column;
   gap: clamp(12px, 1.25vw, 24px);
-  grid-area: btns;
 }
 
 .enroll__btn {
@@ -75,6 +78,8 @@
   padding: clamp(16px, 1.7vw, 32px);
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
   border-radius: clamp(14px, 1vw, 20px);
+  color: $text-dark;
+  cursor: pointer;
 
   &:hover {
     border: 1px solid $inactive-link-color;
