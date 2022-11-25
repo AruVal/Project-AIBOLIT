@@ -166,35 +166,43 @@ img {
   }
 }
 .container {
-  max-width: 1460px;
+  max-width: 77vw;
   margin: 0 auto;
 }
-
-.enroll {
-  display: grid;
-  grid-template-columns: 1fr 1.8fr;
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
 }
 
 .main-title {
   font-family: "SchoolBook";
   font-weight: 400;
-  font-size: 80px;
-  line-height: 110px;
+  font-size: clamp(44px, 4.17vw, 80px);
+  line-height: clamp(50px, 5.7vw, 110px);
   color: #080606;
 }
 
 .enroll__title {
-  margin: 160px 0 0;
+  grid-area: title;
+  margin: 0 0 clamp(20px, 2.6vw, 50px);
 }
 
 .breadcrumbs {
   display: flex;
   align-items: center;
   gap: 6px;
-  padding: 75px 0 60px;
+  margin-left: 28.64vw;
+  padding: clamp(40px, 3.9vw, 75px) 0 clamp(30px, 3.1vw, 60px);
   cursor: pointer;
   text-decoration: none;
   color: #FFC59E;
+}
+@media (max-width: 1024px) {
+  .breadcrumbs {
+    margin-left: 0;
+  }
 }
 
 .breadcrumps__arrow {
@@ -209,24 +217,36 @@ img {
   text-transform: uppercase;
   font-family: "Futura New";
   font-weight: 700;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: clamp(16px, 1.1vw, 20px);
+  line-height: clamp(16px, 1.1vw, 20px);
+}
+
+.enroll__row {
+  display: grid;
+  grid-template-columns: 28.64vw 47.36vw;
+  grid-template-areas: "title btns";
+}
+@media (max-width: 1024px) {
+  .enroll__row {
+    grid-template-columns: 100%;
+    grid-template-areas: "title" "btns";
+  }
 }
 
 .enroll__btns {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: clamp(12px, 1.25vw, 24px);
+  grid-area: btns;
 }
 
 .enroll__btn {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  max-width: 909px;
-  padding: 32px;
+  padding: clamp(16px, 1.7vw, 32px);
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
+  border-radius: clamp(14px, 1vw, 20px);
 }
 .enroll__btn:hover {
   border: 1px solid #C3B9B5;
