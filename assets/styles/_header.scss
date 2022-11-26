@@ -19,10 +19,13 @@ img {
     margin-bottom: 2.07vh;
 }
 .web-header__logo {
-    width: 10vmax;
     margin-right: auto;
     display: flex;
 }
+.landing-logo {
+    width: 10vmax;
+}
+
 .web-header__menu {
     display: flex;
     flex-direction: row;
