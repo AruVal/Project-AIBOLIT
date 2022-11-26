@@ -29,7 +29,7 @@
   font-style: normal;
 }
 body {
-  color: #fffefe;
+  background-color: #fffefe;
 }
 
 img {
@@ -102,6 +102,7 @@ img {
   box-shadow: 2px 2px 20px rgba(155, 82, 50, 0.1);
   border-radius: 10%;
   padding: 2.31vh 0;
+  margin-top: 0.5vh;
   box-sizing: content-box;
   transition: 0.3s;
 }
@@ -163,6 +164,9 @@ img {
 @media screen and (max-width: 1024px) {
   .web-header__dropdown-menu > a:hover {
     padding-left: 2.6vmax;
+  }
+  .web-header__dropdown-menu {
+    margin-top: 0;
   }
 }
 .container {
