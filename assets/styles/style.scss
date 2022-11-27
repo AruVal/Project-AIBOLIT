@@ -3,7 +3,7 @@
 @import "./mixins";
 
 body {
-  color: #fffefe;
+  background-color: #fffefe;
 }
 
 @import "./header";
@@ -11,7 +11,7 @@ body {
 @import "./serviсes";
 @import "./order";
 @import "./features";
-
+@import "./footer";
 
 
 //главный файл scss

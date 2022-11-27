@@ -29,7 +29,7 @@
   font-style: normal;
 }
 body {
-  color: #fffefe;
+  background-color: #fffefe;
 }
 
 img {
@@ -52,9 +52,12 @@ img {
 }
 
 .web-header__logo {
-  width: 10vmax;
   margin-right: auto;
   display: flex;
+}
+
+.landing-logo {
+  width: 10vmax;
 }
 
 .web-header__menu {
@@ -102,6 +105,7 @@ img {
   box-shadow: 2px 2px 20px rgba(155, 82, 50, 0.1);
   border-radius: 10%;
   padding: 2.31vh 0;
+  margin-top: 0.5vh;
   box-sizing: content-box;
   transition: 0.3s;
 }
@@ -163,6 +167,9 @@ img {
 @media screen and (max-width: 1024px) {
   .web-header__dropdown-menu > a:hover {
     padding-left: 2.6vmax;
+  }
+  .web-header__dropdown-menu {
+    margin-top: 0;
   }
 }
 .container {
@@ -578,4 +585,8 @@ img {
   font-weight: 400;
   font-size: clamp(16px, 1.04vw, 20px);
   line-height: clamp(20px, 1.56vw, 30px);
+}
+
+.web-footer {
+  margin-top: auto;
 }/*# sourceMappingURL=style.css.map */
