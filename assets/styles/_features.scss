@@ -1,0 +1,93 @@
+.container1640 {
+  max-width: 85.42vw;
+  margin: 0 auto;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
+
+.title {
+  @include SchoolBook (400, clamp(36px, 2.08vw, 40px), clamp(36px, 2.08vw, 40px));
+  color: $text-dark;
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+}
+
+.features {
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    padding-bottom: clamp(50px, 5.42vw, 104px);
+  }
+
+  &__items {
+    display: grid;
+    grid-gap: clamp(40px, 4.9vw, 94px);
+    grid-template-columns: repeat(auto-fit, minmax(484px, 1fr));
+
+    @media (max-width: 1920px) {
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    }
+
+    @media (max-width: 1360px) {
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+
+    @media (max-width: 1190px) {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+  }
+
+  &__item-title {
+    color: $text-dark;
+    padding-bottom: clamp(16px, 7.08vw, 36px);
+
+    @media (max-width: 1024px) {
+      display: flex;
+      justify-content: center;
+    }
+
+    @media (max-width: 540px) {
+      max-width: 100%;
+    }
+  }
+
+  &__row {
+    display: grid;
+    grid-template: 1fr / 1fr 1.9fr;
+    grid-template-areas: "ico txt";
+
+    @media (max-width: 1024px) {
+      grid-template: 1fr / 1fr;
+      grid-template-areas: "ico" "txt";
+    }
+  }
+
+
+  &__ico {
+    grid-area: ico;
+    width: clamp(70px, 5.2vw, 100px);
+    height: clamp(70px, 5.2vw, 100px);
+    align-self: start;
+    justify-self: center;
+
+    @media (max-width: 1024px) {
+      padding-bottom: 24px;
+    }
+  }
+
+
+  &__desc {
+    grid-area: txt;
+  }
+}
+
+.text {
+  color: $text-custom;
+  @include Futura-New (400, clamp(16px, 1.04vw, 20px), clamp(20px, 1.56vw, 30px));
+}

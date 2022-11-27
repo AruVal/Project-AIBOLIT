@@ -3,13 +3,15 @@
 @import "./mixins";
 
 body {
-    color: #fffefe;
+  color: #fffefe;
 }
 
 @import "./header";
 @import "./enroll";
-@import "./servises";
+@import "./serviсes";
 @import "./order";
+@import "./features";
+
 
 
 //главный файл scss

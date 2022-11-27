@@ -257,45 +257,96 @@ img {
   border: 1px solid #C3B9B5;
 }
 
-.cards__link {
-  display: block;
+.container1352 {
+  max-width: 70.42vw;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .container1352 {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
+
+.cards {
+  display: grid;
+  grid-gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
 .card {
+  position: relative;
   display: flex;
+  align-items: stretch;
   flex-direction: column;
-  max-width: 320px;
   padding: 24px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
+  border-radius: clamp(14px, 1vw, 20px);
   cursor: pointer;
 }
 .card:hover .card__ico {
   filter: invert(24%) sepia(5%) saturate(2501%) hue-rotate(324deg) brightness(101%) contrast(87%);
 }
-
+.card__link {
+  display: block;
+}
 .card__ico {
-  width: 110px;
-  height: 110px;
-  margin-top: 22px;
-  background-image: url("../assets/images/landing/services/stethoscope.svg");
+  width: clamp(70px, 5.73vw, 110px);
+  height: clamp(70px, 5.73vw, 110px);
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center center;
   transition: 0.3s;
   filter: invert(90%) sepia(28%) saturate(6487%) hue-rotate(310deg) brightness(135%) contrast(104%);
 }
-
-.subtitle {
-  font-family: "SchoolBook";
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 40px;
+.card__ico_ico1 {
+  background-image: url("../assets/images/landing/services/stethoscope.svg");
 }
-
-.card__title {
-  color: #59443F;
+.card__ico_ico2 {
+  background-image: url("../assets/images/landing/services/scalpel.svg");
 }
-
+.card__ico_ico3 {
+  background-image: url("../assets/images/landing/services/collar.svg");
+}
+.card__ico_ico4 {
+  background-image: url("../assets/images/landing/services/bone.svg");
+}
+.card__ico_ico5 {
+  background-image: url("../assets/images/landing/services/trace.svg");
+}
+.card__ico_ico6 {
+  background-image: url("../assets/images/landing/services/ophthalmology.svg");
+}
+.card__ico_ico7 {
+  background-image: url("../assets/images/landing/services/heart.svg");
+}
+.card__ico_ico8 {
+  background-image: url("../assets/images/landing/services/teeth.svg");
+}
+.card__ico_ico9 {
+  background-image: url("../assets/images/landing/services/dog and puppy.svg");
+}
+.card__ico_ico10 {
+  background-image: url("../assets/images/landing/services/inspection.svg");
+}
+.card__ico_ico11 {
+  background-image: url("../assets/images/landing/services/laboratory.svg");
+}
+.card__ico_ico12 {
+  background-image: url("../assets/images/landing/services/syringe.svg");
+}
+.card__ico_ico13 {
+  background-image: url("../assets/images/landing/services/organ.svg");
+}
+.card__ico_ico14 {
+  background-image: url("../assets/images/landing/services/lizard.svg");
+}
+.card__ico_ico15 {
+  background-image: url("../assets/images/landing/services/pills.svg");
+}
+.card__ico_ico16 {
+  background-image: url("../assets/images/landing/services/grooming.svg");
+}
 .card__desc {
   font-family: "Futura New";
   font-weight: 400;
@@ -303,11 +354,25 @@ img {
   line-height: 20px;
   color: #59443F;
 }
-
 .card__row {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+}
+.card__title {
+  margin-bottom: clamp(16px, 1.15vw, 22px);
+  color: #59443F;
+}
+
+.subtitle {
+  font-family: "SchoolBook";
+  font-weight: 400;
+  font-size: clamp(20px, 1.56vw, 30px);
+  line-height: clamp(36px, 2.08vw, 40px);
 }
 
 .order__form {
@@ -414,4 +479,103 @@ img {
   font-size: 20px;
   line-height: 25px;
   color: #59443F;
+}
+
+.container1640 {
+  max-width: 85.42vw;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .container1640 {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
+
+.title {
+  font-family: "SchoolBook";
+  font-weight: 400;
+  font-size: clamp(36px, 2.08vw, 40px);
+  line-height: clamp(36px, 2.08vw, 40px);
+  color: #080606;
+}
+@media (max-width: 768px) {
+  .title {
+    text-align: center;
+  }
+}
+
+.features__title {
+  display: flex;
+  justify-content: center;
+  padding-bottom: clamp(50px, 5.42vw, 104px);
+}
+.features__items {
+  display: grid;
+  grid-gap: clamp(40px, 4.9vw, 94px);
+  grid-template-columns: repeat(auto-fit, minmax(484px, 1fr));
+}
+@media (max-width: 1920px) {
+  .features__items {
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  }
+}
+@media (max-width: 1360px) {
+  .features__items {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+}
+@media (max-width: 1190px) {
+  .features__items {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+.features__item-title {
+  color: #080606;
+  padding-bottom: clamp(16px, 7.08vw, 36px);
+}
+@media (max-width: 1024px) {
+  .features__item-title {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 540px) {
+  .features__item-title {
+    max-width: 100%;
+  }
+}
+.features__row {
+  display: grid;
+  grid-template: 1fr/1fr 1.9fr;
+  grid-template-areas: "ico txt";
+}
+@media (max-width: 1024px) {
+  .features__row {
+    grid-template: 1fr/1fr;
+    grid-template-areas: "ico" "txt";
+  }
+}
+.features__ico {
+  grid-area: ico;
+  width: clamp(70px, 5.2vw, 100px);
+  height: clamp(70px, 5.2vw, 100px);
+  align-self: start;
+  justify-self: center;
+}
+@media (max-width: 1024px) {
+  .features__ico {
+    padding-bottom: 24px;
+  }
+}
+.features__desc {
+  grid-area: txt;
+}
+
+.text {
+  color: #59443F;
+  font-family: "Futura New";
+  font-weight: 400;
+  font-size: clamp(16px, 1.04vw, 20px);
+  line-height: clamp(20px, 1.56vw, 30px);
 }/*# sourceMappingURL=style.css.map */
