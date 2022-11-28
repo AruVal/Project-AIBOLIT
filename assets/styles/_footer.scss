@@ -3,32 +3,142 @@
 
 .web-footer {
     margin-top: auto;
+    background-color: $footer-color;
 }
 .web-footer__container {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: $white;
+    padding-left: 11.98vmax;
+    padding-right: 12vmax;
+    padding-top: 7.41vmin;
+    padding-bottom: 5.56vmin;
+    gap: 1vmin;
 }
-.web-footer__nav {
-}
-.footer-nav {
-}
+
 .footer-nav__logo {
+    filter: invert(100%) sepia(6%) saturate(0%) hue-rotate(115deg)
+        brightness(108%) contrast(108%);
+    transition: 0.3s;
+    &:hover {
+        filter: invert(75%) sepia(38%) saturate(326%) hue-rotate(337deg)
+            brightness(99%) contrast(107%);
+    }
 }
-.landing-logo {
+
+.footer-nav__logo-img {
+    margin-top: -1.7vh;
+}
+
+.footer-nav__logo-container {
+    display: flex;
+    gap: 1.15vmax;
+}
+
+.footer-nav__title {
+    @include SchoolBook(700, 4.63vh, 4.26vh);
+    color: black;
+}
+
+.footer-nav__subtitle {
+    @include Futura-New(400, 2.22vh, 2.22vh);
+    color: black;
 }
 .footer-nav__nav-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 3.61vmin;
+    margin-left: 5.33vmax;
+    gap: 1vw;
 }
 .footer-nav__nav-item {
+    display: flex;
+    flex-direction: column;
 }
 .footer-nav__nav-item-link {
+    color: $white;
+    @include Futura-New(400, 2.22vh, 150%);
+    transition: 0.3s;
+    &:hover {
+        color: $bg-highlighted;
+    }
 }
-.web-footer__contacts {
-}
+.web-footer__contacts,
 .footer-contacts {
+    min-width: 28.33vmax;
+    display: flex;
+    flex-direction: column;
+    gap: 2.78vmin;
 }
+
 .footer-contacts__apps {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vh;
 }
-.footer-contacts__socials {
+
+.footer-contacts__app {
+    display: block;
 }
-.footer-contacts__sites {
+
+.web-socials {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2.6vw;
 }
+
+.footer-contacts__socials > a {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(319deg)
+        brightness(102%) contrast(101%);
+    &:hover {
+        filter: invert(75%) sepia(38%) saturate(326%) hue-rotate(337deg)
+            brightness(99%) contrast(107%);
+    }
+}
+.footer-contacts__sites,
 .footer-contacts__credit {
+    @include Futura-New(400, 2.22vh, 2.78vh);
+}
+
+.footer-contacts__sites {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-contacts__sites > a {
+    color: $white;
+    &:hover {
+        color: $bg-highlighted;
+    }
+}
+
+.footer-contacts__credit {
+    margin-top: auto;
+    &:hover {
+        color: $bg-highlighted;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .web-footer__container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .web-footer__container {
+        padding: 1.7em;
+    }
+    .footer-nav__nav-items {
+        margin-left: 0;
+    }
+    .footer-contacts__app {
+        max-width: 90%;
+    }
+    .footer-nav__logo-img {
+        max-width: 22%;
+    }
 }
