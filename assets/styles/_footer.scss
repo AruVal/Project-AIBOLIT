@@ -6,7 +6,6 @@
     background-color: $footer-color;
 }
 .web-footer__container {
-    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -73,14 +72,15 @@
     gap: 2.78vmin;
 }
 
-.footer-contacts__apps {
+.footer-contacts__apps,
+.web-apps {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 1vh;
 }
 
-.footer-contacts__app {
+.web-apps__app {
     display: block;
 }
 

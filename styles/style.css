@@ -590,7 +590,6 @@ img {
 }
 
 .web-footer__container {
-  width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -668,14 +667,15 @@ img {
   gap: 2.78vmin;
 }
 
-.footer-contacts__apps {
+.footer-contacts__apps,
+.web-apps {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 1vh;
 }
 
-.footer-contacts__app {
+.web-apps__app {
   display: block;
 }
 
@@ -736,5 +736,79 @@ img {
   }
   .footer-nav__logo-img {
     max-width: 22%;
+  }
+}
+.landing-map {
+  max-width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1.35vmax;
+  margin-left: 12vmax;
+  margin-right: 12vmax;
+  margin-top: 21.76vmin;
+  margin-bottom: 20vmin;
+}
+
+.landing-map__desc,
+.map-desc {
+  display: flex;
+  flex-direction: column;
+}
+
+.map-desc__title {
+  color: #080606;
+  margin-bottom: 6.48vmin;
+}
+
+.map-desc__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2vmin;
+}
+
+.map-desc__subtitle {
+  color: #080606;
+}
+
+.map-desc__row {
+  display: flex;
+  flex-direction: row;
+  gap: 1.56vmax;
+}
+
+.map-desc__img {
+  filter: invert(99%) sepia(54%) saturate(4238%) hue-rotate(296deg) brightness(104%) contrast(116%);
+  width: clamp(20px, 2.4vw, 30px);
+  height: clamp(29px, 2.4vw, 40px);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.map-desc__desc {
+  color: #59443F;
+}
+
+.map-desc__img_loc {
+  background-image: url(/assets/images/landing/ico/location.svg);
+}
+
+.map-desc__img_ph {
+  background-image: url(/assets/images/landing/ico/phone.svg);
+}
+
+.map-desc__img_time {
+  background-image: url(/assets/images/landing/ico/clock.svg);
+}
+
+@media screen and (max-width: 1024px) {
+  .landing-map {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  .landing-map {
+    margin: 5em 1.5em;
   }
 }/*# sourceMappingURL=style.css.map */
