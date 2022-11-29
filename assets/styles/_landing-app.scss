@@ -1,0 +1,13 @@
+.main-app {
+    background-color: $bg-highlighted;
+}
+.main-app__add-text {
+    font-family: "Futura New";
+    font-weight: 400;
+    line-height: clamp(16px, 1.04vw, 20px);
+    font-size: clamp(20px, 1.56vw, 30px);
+    color: $white;
+}
+.main-app__title {
+    color: $white;
+}

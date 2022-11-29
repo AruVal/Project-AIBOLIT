@@ -122,13 +122,13 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
     .web-footer__container {
         flex-direction: column;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .web-footer__container {
         padding: 1.7em;
     }
