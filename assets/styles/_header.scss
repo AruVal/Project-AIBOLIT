@@ -21,9 +21,8 @@ img {
 .web-header__logo {
     margin-right: auto;
     display: flex;
-}
-.landing-logo {
-    width: 10vmax;
+    filter: invert(24%) sepia(13%) saturate(1117%) hue-rotate(324deg)
+        brightness(91%) contrast(79%);
 }
 
 .web-header__menu {
@@ -101,8 +100,7 @@ img {
             brightness(94%) contrast(86%);
     }
 }
-.web-header__location-img {
-}
+
 .web-header__location-text {
     margin-left: 1em;
     color: #000;
