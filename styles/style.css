@@ -738,8 +738,7 @@ img {
     max-width: 22%;
   }
 }
-.landing-map,
-.landing-container {
+.landing-map {
   max-width: 100vw;
   display: flex;
   flex-direction: row;
@@ -847,6 +846,14 @@ img {
 }
 .main-app {
   background-color: #FFC59E;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-left: 12vmax;
+  padding-right: 12vmax;
+  padding-top: 21.76vmin;
+  padding-bottom: 20vmin;
 }
 
 .main-app__add-text {
@@ -859,4 +866,24 @@ img {
 
 .main-app__title {
   color: #FFFFFF;
+}
+
+.main-app__section {
+  max-width: 40vmax;
+}
+
+.main-app__banner {
+  z-index: 1;
+}
+
+@media screen and (max-width: 1023px) {
+  .main-app {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main-app {
+    padding: 5em 1.5em;
+    width: auto;
+  }
 }/*# sourceMappingURL=style.css.map */
