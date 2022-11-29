@@ -14,6 +14,7 @@
 .main-title {
   @include SchoolBook (400, clamp(44px, 4.17vw, 80px), clamp(50px, 5.7vw, 110px));
   color: $text-dark;
+  margin: 0;
 }
 
 .section__title {
@@ -39,9 +40,11 @@
 .breadcrumps__arrow {
   width: 7px;
   height: 12px;
-  background-image: url('../assets/images/landing/ico/arrow_small_prev.svg');
+  background-image: url('../assets/images/landing/ico/path_prev.svg');
   background-size: contain;
   background-repeat: no-repeat;
+  filter: invert(10%) sepia(28%) saturate(6487%) hue-rotate(310deg) brightness(135%) contrast(104%);
+  ;
 }
 
 .breadcrumps__title {

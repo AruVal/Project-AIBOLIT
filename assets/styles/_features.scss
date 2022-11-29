@@ -9,7 +9,7 @@
 }
 
 .title {
-  @include SchoolBook (400, clamp(36px, 2.08vw, 40px), clamp(36px, 2.08vw, 40px));
+  @include SchoolBook (400, clamp(32px, 2.08vw, 40px), clamp(32px, 2.08vw, 40px));
   color: $text-dark;
 
   @media (max-width: 768px) {
