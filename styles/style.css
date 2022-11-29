@@ -902,50 +902,6 @@ img {
     flex-wrap: wrap;
   }
 }
-.main-app {
-  background-color: #FFC59E;
-  max-width: 100vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  padding-left: 12vmax;
-  padding-right: 12vmax;
-  padding-top: 21.76vmin;
-  padding-bottom: 20vmin;
-}
-
-.main-app__add-text {
-  font-family: "Futura New";
-  font-weight: 400;
-  line-height: clamp(16px, 1.04vw, 20px);
-  font-size: clamp(20px, 1.56vw, 30px);
-  color: #FFFFFF;
-}
-
-.main-app__title {
-  color: #FFFFFF;
-}
-
-.main-app__section {
-  max-width: 40vmax;
-}
-
-.main-app__banner {
-  z-index: 1;
-}
-
-@media screen and (max-width: 1023px) {
-  .main-app {
-    flex-direction: column;
-  }
-}
-@media screen and (max-width: 767px) {
-  .main-app {
-    padding: 5em 1.5em;
-    width: auto;
-  }
-}
-
 .service__title {
   padding-bottom: 30px;
 }
@@ -1190,4 +1146,74 @@ img {
 .btn-next {
   width: 7px;
   height: 12px;
+}
+
+.main-app {
+  background-color: #FFC59E;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-left: 12vmax;
+  padding-right: 12vmax;
+  padding-top: 21.76vmin;
+  padding-bottom: 20vmin;
+}
+
+.main-app__add-text {
+  font-family: "Futura New";
+  font-weight: 400;
+  line-height: clamp(16px, 1.04vw, 20px);
+  font-size: clamp(20px, 1.56vw, 30px);
+  color: #FFFFFF;
+}
+
+.main-app__title {
+  color: #FFFFFF;
+}
+
+.main-app__section {
+  max-width: 40vmax;
+}
+
+.main-app__banner {
+  z-index: 1;
+}
+
+@media screen and (max-width: 1023px) {
+  .main-app {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main-app {
+    padding: 5em 1.5em;
+    width: auto;
+  }
+}
+.history__img {
+  display: flex;
+  flex-direction: row;
+  gap: clamp(15px, 1.6vw, 50px);
+}
+@media (max-width: 1024px) {
+  .history__img {
+    justify-content: center;
+  }
+}
+.history-mg {
+  padding: 0 clamp(30px, 2.6vw, 50px);
+}
+
+.section__img-container_history {
+  padding: 0 0 clamp(30px, 2.6vw, 50px);
+}
+
+.section__img_history {
+  width: clamp(130px, 22.4vw, 430px);
+  height: clamp(130px, 22.4vw, 430px);
+}
+
+.section__article_history {
+  margin-top: 0;
 }/*# sourceMappingURL=style.css.map */

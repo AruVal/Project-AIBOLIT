@@ -1,0 +1,30 @@
+.history {
+
+  &__img {
+    display: flex;
+    flex-direction: row;
+    gap: clamp(15px, 1.6vw, 50px);
+
+    @media (max-width: 1024px) {
+      justify-content: center;
+    }
+  }
+
+  &-mg {
+    padding: 0 clamp(30px, 2.6vw, 50px);
+  }
+
+}
+
+.section__img-container_history {
+  padding: 0 0 clamp(30px, 2.6vw, 50px);
+}
+
+.section__img_history {
+  width: clamp(130px, 22.40vw, 430px);
+  height: clamp(130px, 22.40vw, 430px);
+}
+
+.section__article_history {
+  margin-top: 0;
+}
