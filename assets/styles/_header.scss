@@ -111,7 +111,7 @@ img {
     position: relative;
     width: 80px;
     height: 50px;
-    margin: 20px;
+    margin: 7vw;
     @include Futura-New(700, 2.22vh, 2.22vh);
 }
 
@@ -186,11 +186,11 @@ img {
 .burger__checkbox:checked ~ .burger__icon::before {
     opacity: 1;
 
-    transform: translateY(-13px) rotate(-45deg);
+    transform: translateY(-12px) rotate(-45deg);
 }
 .burger__checkbox:checked ~ .burger__icon::after {
     opacity: 1;
-    transform: translateY(13px) rotate(45deg);
+    transform: translateY(12px) rotate(45deg);
 }
 
 .burger__checkbox ~ .burger__menu {
@@ -203,12 +203,15 @@ img {
 
 .burger__menu {
     position: absolute;
-    width: auto;
-    max-width: 60vw;
-    margin: 1vh 0 0 -30vw;
-    padding: 7.36vw;
+    right: calc(0vw - 5.55vw);
+    width: fit-content;
 
+    margin: 6vh 0 0 -30vw;
+    padding: 7vw;
+    padding-bottom: 5vw;
+    border-radius: 10%;
     background-color: $bg-light;
+    box-shadow: 2px 2px 20px rgba(155, 82, 50, 0.1);
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
 
