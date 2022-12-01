@@ -1,11 +1,6 @@
-@import "./colors";
-@import "./mixins";
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+/* переменные работают только в scss/sass */
+/* @import "./colors";
+@import "./mixins"; */
 
 #offer {
     width: 100vw;
@@ -15,7 +10,7 @@
     justify-content: space-between;
     padding: 0 0 5px 80px;
 }
-
+/* 8000/1080 vh vmin vw vmax  */
 .offer_slider_bar {
     display: flex;
     align-items: center;
@@ -41,12 +36,12 @@
 .offer_header {
     margin-top: 113px;
     margin-bottom: 50px;
-    font-family: 'SchoolBook';
+    /* font-family: "SchoolBook";
     font-style: normal;
     font-weight: 400;
     font-size: 60px;
     line-height: 1.38;
-    color: #080606;
+    color: #080606; */
 }
 
 .offer_button {
@@ -55,44 +50,51 @@
     padding: 24px 77px 23px 77px;
     border-radius: 35px;
 
-    font-family: 'Futura New';
+    font-family: "Futura New";
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 20px;
 
-    color: #FFFFFF;
-    background-color: #FFC59E;
+    color: #ffffff;
+    background-color: #ffc59e;
     text-decoration: none;
 }
-.offer_button:hover{
-    box-shadow:  0px 5px 10px 5px  rgba(253, 199, 166, 0.692);
-    transform: translateY(-1.5px)
+.offer_button:hover {
+    box-shadow: 0px 5px 10px 5px rgba(253, 199, 166, 0.692);
+    transform: translateY(-1.5px);
 }
-.web-socials {
+
+/* я использую этот же класс в футере. чтобы написать свои свойства создавай новый класс */
+.web-socials-slider {
     display: flex;
     width: 310px;
     flex-direction: row;
     align-content: center;
     column-gap: 2.6vw;
-    width: clamp(70px, 5.73vw, 110px);
+    /* width: clamp(70px, 5.73vw, 110px); */
     height: clamp(70px, 5.73vw, 110px);
     margin-top: 197px;
     margin-bottom: 76px;
 
-    filter: invert(81%) sepia(39%) saturate(145%) hue-rotate(214deg) brightness(101%) contrast(91%);
+    filter: invert(83%) sepia(29%) saturate(181%) hue-rotate(214deg)
+        brightness(99%) contrast(92%);
 }
 .offer_fb:hover {
-    filter: invert(65%) sepia(38%) saturate(326%) hue-rotate(200deg) brightness(70%) contrast(100%);
+    filter: invert(65%) sepia(38%) saturate(326%) hue-rotate(200deg)
+        brightness(70%) contrast(100%);
 }
 .offer_inst:hover {
-    filter: invert(65%) sepia(38%) saturate(326%) hue-rotate(200deg) brightness(70%) contrast(100%);
+    filter: invert(65%) sepia(38%) saturate(326%) hue-rotate(200deg)
+        brightness(70%) contrast(100%);
 }
 .offer_vk:hover {
-    filter: invert(65%) sepia(38%) saturate(326%) hue-rotate(200deg) brightness(70%) contrast(100%);
+    filter: invert(65%) sepia(38%) saturate(326%) hue-rotate(200deg)
+        brightness(70%) contrast(100%);
 }
 .offer_ytb:hover {
-    filter: invert(65%) sepia(38%) saturate(326%) hue-rotate(200deg) brightness(70%) contrast(100%);
+    filter: invert(65%) sepia(38%) saturate(326%) hue-rotate(200deg)
+        brightness(70%) contrast(100%);
 }
 
 .offer_wrap {
@@ -102,23 +104,23 @@
 
 .img_offer_slide_1 {
     position: relative;
-    width: 873px;
-    height: 785px;
-    border: 92px 0px 0px 0px;
-    border-color: #FFFFFF;
+    /* width: 873px;
+    height: 785px; */
+    /* margin: 92px 0px 0px 0px; */
+    border-color: #ffffff;
     border-radius: 1px;
 }
-/* неработающий блок с текстом поверх картинки
+/* неработающий блок с текстом поверх картинки*/
 .offer_number {
+    z-index: 1;
     position: absolute;
-    left: 1630px;
-    top: 768px;
+    left: 38vw;
+    top: 80vh;
 
-    font-family: 'Futura New';
+    font-family: "Futura New";
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 1.25;
-color: #59443F;
+    color: #59443f;
 }
-*/

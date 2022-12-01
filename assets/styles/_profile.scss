@@ -1,0 +1,94 @@
+.profile {
+}
+
+.section__nav-notif {
+    position: relative;
+    margin-left: clamp(20px, 1.56vw, 30px);
+}
+.section__nav-item_flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.profile__nav-items {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    align-items: center;
+}
+.profile__nav-item {
+    padding: clamp(10px, 0.78vw, 15px);
+}
+
+.profile__title {
+    margin-bottom: 2.78vmin;
+}
+
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 9.26vmin;
+}
+
+.profile__card {
+    background: $white;
+    border: 1px solid $bg-separate;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    padding: 1.39vmin;
+}
+
+.profile__card-name,
+.profile__card-desc,
+.profile__card-picture {
+    display: flex;
+    flex-direction: column;
+    padding: 1.39vmin;
+    row-gap: 1.85vmin;
+}
+
+.profile__card-line {
+    display: flex;
+    flex-direction: column;
+}
+.profile__card-parameter {
+    @include Futura-New(400, 1.39vmin, 1.39vmin);
+    color: $inactive-link-color;
+    padding-bottom: 0.926vmin;
+}
+.profile__card-text {
+    @include Futura-New(400, 1.85vmin, 2.3vmin);
+    color: $text-dark;
+}
+
+.profile__link {
+    @include Futura-New(700, 1.85vmin, 2.78vmin);
+    color: $button-color;
+    text-align: center;
+}
+
+.profile__card_banner {
+    background: $bg-highlighted;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    padding: 1.39vmin;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .profile__nav-items {
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: unset;
+    }
+    .link {
+        &:hover {
+            padding-left: 0;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .profile__nav-items {
+        display: none;
+    }
+}

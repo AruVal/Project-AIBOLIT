@@ -31,6 +31,9 @@
 }
 body {
   background-color: #fffefe;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -915,6 +918,12 @@ img {
   .footer-nav__logo-img {
     max-width: 22%;
   }
+  .footer-contacts__apps {
+    display: none;
+  }
+  .web-footer__nav {
+    padding-bottom: 2vh;
+  }
 }
 .landing-map {
   max-width: 100vw;
@@ -1054,7 +1063,7 @@ img {
     gap: clamp(14px, 1vw, 20px);
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .section__nav-items {
     display: none;
   }
@@ -1341,4 +1350,107 @@ img {
 
 .section__article_history {
   margin-top: 0;
+}
+
+.section__nav-notif {
+  position: relative;
+  margin-left: clamp(20px, 1.56vw, 30px);
+}
+
+.section__nav-item_flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.profile__nav-items {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  align-items: center;
+}
+
+.profile__nav-item {
+  padding: clamp(10px, 0.78vw, 15px);
+}
+
+.profile__title {
+  margin-bottom: 2.78vmin;
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 9.26vmin;
+}
+
+.profile__card {
+  background: #FFFFFF;
+  border: 1px solid #EDE9E8;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  padding: 1.39vmin;
+}
+
+.profile__card-name,
+.profile__card-desc,
+.profile__card-picture {
+  display: flex;
+  flex-direction: column;
+  padding: 1.39vmin;
+  row-gap: 1.85vmin;
+}
+
+.profile__card-line {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile__card-parameter {
+  font-family: "Futura New";
+  font-weight: 400;
+  font-size: 1.39vmin;
+  line-height: 1.39vmin;
+  color: #C3B9B5;
+  padding-bottom: 0.926vmin;
+}
+
+.profile__card-text {
+  font-family: "Futura New";
+  font-weight: 400;
+  font-size: 1.85vmin;
+  line-height: 2.3vmin;
+  color: #080606;
+}
+
+.profile__link {
+  font-family: "Futura New";
+  font-weight: 700;
+  font-size: 1.85vmin;
+  line-height: 2.78vmin;
+  color: #FFC59E;
+  text-align: center;
+}
+
+.profile__card_banner {
+  background: #FFC59E;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  padding: 1.39vmin;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .profile__nav-items {
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: unset;
+  }
+  .link:hover {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .profile__nav-items {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
