@@ -1373,14 +1373,11 @@ img {
   padding: clamp(10px, 0.78vw, 15px);
 }
 
-.profile__title {
-  margin-bottom: 2.78vmin;
-}
-
 .profile-section {
   display: flex;
   flex-direction: column;
   margin-bottom: 9.26vmin;
+  row-gap: 2.78vmin;
 }
 
 .profile__card {
@@ -1432,12 +1429,82 @@ img {
   text-align: center;
 }
 
+.profile__card-title {
+  font-family: "SchoolBook";
+  font-weight: 400;
+  font-size: 2.78vmin;
+  line-height: 4.63vmin;
+  color: #080606;
+}
+
 .profile__card_banner {
   background: #FFC59E;
   border-radius: 20px;
-  display: grid;
-  grid-template-columns: repeat(2, auto);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   padding: 1.39vmin;
+}
+
+.profile__banner-text {
+  font-family: "Futura New";
+  font-weight: 700;
+  font-size: 2.78vmin;
+  line-height: 2.78vmin;
+  color: #FFFFFF;
+}
+
+.document-text_medcart {
+  line-height: 1.39vmin;
+}
+
+.document-text_analyzes {
+  line-height: 1.85vmin;
+}
+
+.profile__card-line_special {
+  padding-top: 7vmin;
+}
+
+.document,
+.profile__card-document {
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 1.39vmin;
+  display: flex;
+  align-items: center;
+  column-gap: 0.52vmax;
+  margin-top: 0.926vmin;
+}
+.document:hover .profile__card-text,
+.profile__card-document:hover .profile__card-text {
+  text-decoration: underline;
+}
+
+.document__parameter {
+  padding-bottom: 0;
+  margin-left: auto;
+}
+
+.document_medcart {
+  padding: 2.78vmin 1.39vmin;
+}
+
+.document-text_analyzes,
+.document-text_medcart {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.document__name {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 60% 40%;
+}
+
+.profile__card_doctor {
+  display: flex;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
