@@ -4,8 +4,8 @@
     flex-direction: row;
     justify-content: flex-start;
     gap: 1.35vmax;
-    margin-left: 12vmax;
-    margin-right: 12vmax;
+    margin-left: 8vmax;
+    margin-right: 7vmax;
     margin-top: 21.76vmin;
     margin-bottom: 20vmin;
 }
@@ -13,6 +13,10 @@
 .map-desc {
     display: flex;
     flex-direction: column;
+}
+
+.landing-map_page {
+    margin-top: 0;
 }
 
 .map-desc__title {
@@ -65,6 +69,10 @@
     display: none;
 }
 
+.map-desc__breadcrumps {
+    margin-left: 0;
+}
+
 @media screen and (max-width: 1023px) {
     .landing-map {
         flex-direction: column;
@@ -97,5 +105,8 @@
 @media screen and (min-width: 1024px) {
     .landing-map {
         flex-wrap: wrap;
+    }
+    .landing-map__map {
+        margin-top: 16.49vh;
     }
 }
