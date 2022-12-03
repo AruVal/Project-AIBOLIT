@@ -47,6 +47,13 @@ img {
     &:hover {
         color: $text-custom;
     }
+    &:active {
+        color: $text-custom;
+    }
+}
+// для выделения активного пункта навигации  в хэдере
+.web-header__menu-item_active {
+    color: $text-custom;
 }
 
 .web-header__dropdown-link {

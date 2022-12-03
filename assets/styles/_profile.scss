@@ -47,7 +47,8 @@
     display: flex;
     flex-direction: column;
 }
-.profile__card-parameter {
+.profile__card-parameter,
+.text_tiny {
     @include Futura-New(400, 1.39vmin, 1.39vmin);
     color: $inactive-link-color;
     padding-bottom: 0.926vmin;
