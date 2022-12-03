@@ -3,7 +3,10 @@
 @import "./mixins";
 
 body {
-  background-color: #fffefe;
+    background-color: #fffefe;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 @import "./header";
@@ -17,4 +20,5 @@ body {
 @import "./landing-app";
 @import "./history";
 @import "./team";
+@import "./profile";
 //главный файл scss

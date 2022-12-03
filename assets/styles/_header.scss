@@ -106,13 +106,142 @@ img {
     color: #000;
 }
 
-@media screen and (max-width: 768px) {
+.burger {
+    display: none;
+    position: relative;
+    width: 80px;
+    height: 50px;
+    margin: 7vw;
+    @include Futura-New(700, 2.22vh, 2.22vh);
+}
+
+.burger__checkbox {
+    display: block;
+    width: 47px;
+    height: 35px;
+    position: absolute;
+    top: 6px;
+    right: 32px;
+
+    cursor: pointer;
+
+    opacity: 0;
+    z-index: 2;
+
+    -webkit-touch-callout: none;
+    &:checked ~ .burger__menu {
+        transform: none;
+    }
+}
+
+.burger__icon {
+    position: relative;
+    top: 20px;
+    width: 50px;
+    height: 5px;
+    background-color: $button-color;
+    z-index: 1;
+
+    -webkit-user-select: none;
+    user-select: none;
+    // transform-origin: 4px 0px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 5px;
+        top: -12px;
+        background-color: $button-color;
+
+        // transform-origin: 0% 100%;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 5px;
+        top: 12px;
+        background-color: $button-color;
+        // transform-origin: 4px 0px;
+    }
+}
+
+.burger__icon,
+.burger__icon::after,
+.burger__icon::before {
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+        0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+.burger__checkbox:checked ~ .burger__icon,
+.burger__checkbox:checked ~ .burger__icon::after,
+.burger__checkbox:checked ~ .burger__icon::before {
+    background-color: $bg-highlighted;
+}
+
+.burger__checkbox:checked ~ .burger__icon {
+    background-color: $bg-light;
+}
+.burger__checkbox:checked ~ .burger__icon::before {
+    opacity: 1;
+
+    transform: translateY(-12px) rotate(-45deg);
+}
+.burger__checkbox:checked ~ .burger__icon::after {
+    opacity: 1;
+    transform: translateY(12px) rotate(45deg);
+}
+
+.burger__checkbox ~ .burger__menu {
+    opacity: 0;
+}
+
+.burger__checkbox:checked ~ .burger__menu {
+    opacity: 1;
+}
+
+.burger__menu {
+    position: absolute;
+    right: calc(0vw - 5.55vw);
+    width: fit-content;
+
+    margin: 6vh 0 0 -30vw;
+    padding: 7vw;
+    padding-bottom: 5vw;
+    border-radius: 10%;
+    background-color: $bg-light;
+    box-shadow: 2px 2px 20px rgba(155, 82, 50, 0.1);
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+
+    transform-origin: 0% 0%;
+    transform: translate(0, -100%);
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+.burger__menu > a {
+    text-decoration: none;
+    color: $inactive-link-color;
+
+    transition: color 0.3s ease;
+    &:hover {
+        color: $text-custom;
+    }
+    & > li {
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
     .web-header__location {
         display: none;
     }
     .web-header__menu {
-        gap: 1vw;
-        justify-content: end;
+        display: none;
+        // gap: 1vw;
+        // justify-content: end;
     }
     .web-header__logo {
         width: 40%;
@@ -124,8 +253,11 @@ img {
     .web-header__dropdown-menu {
         right: 0;
     }
+    .burger {
+        display: block;
+    }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
     .web-header__dropdown-menu > a:hover {
         padding-left: 2.6vmax;
     }

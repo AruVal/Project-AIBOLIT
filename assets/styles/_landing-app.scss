@@ -33,7 +33,12 @@
 }
 @media screen and (max-width: 767px) {
     .main-app {
-        padding: 5em 1.5em;
+        padding: 5em 2vw;
         width: auto;
+    }
+    .main-app__section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }

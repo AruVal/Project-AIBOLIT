@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/styles/normalize.css" />
+        <link rel="stylesheet" href="/styles/style.css" />
+        <title>Личный кабинет</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="profile section">
+                <a class="breadcrumbs" href="./index.html">
+                    <div class="breadcrumps__arrow"></div>
+                    <p class="breadcrumps__title">Назад</p>
+                </a>
+                <div class="section__row">
+                    <div class="section__aside section__title">
+                        <h1 class="section__mg main-title">Виктория</h1>
+                        <div class="section__nav">
+                            <ul class="section__nav-items profile__nav-items">
+                                <li class="section__nav-item profile__nav-item">
+                                    <a class="nav-link link" href="#"
+                                        >ЛИЧНЫЕ ДАННЫЕ</a
+                                    >
+                                </li>
+                                <li class="section__nav-item profile__nav-item">
+                                    <a class="nav-link link" href="#"
+                                        >МОИ ПИТОМЦЫ</a
+                                    >
+                                </li>
+                                <li
+                                    class="section__nav-item profile__nav-item section__nav-item_flex"
+                                >
+                                    <a class="nav-link link" href="#"
+                                        >ЗАПИСЬ НА ПРИЕМ</a
+                                    >
+                                    <img
+                                        class="section__nav-notif"
+                                        src="/assets/images/profile/notification.svg"
+                                        alt="Уведомление"
+                                    />
+                                </li>
+                                <li class="section__nav-item profile__nav-item">
+                                    <a class="nav-link link" href="#">ВЫЙТИ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="section__part">
+                        <div class="profile-section">
+                            <h2 class="title profile__title">Личные данные</h2>
+                            <div class="profile__card">
+                                <div class="profile__card-picture">
+                                    <img
+                                        src="/assets/images/profile/profile-pic-placeholder.svg"
+                                        alt="No avatar"
+                                        class="profile-pfp"
+                                    />
+                                    <a class="profile__link" href="#"
+                                        >изменить</a
+                                    >
+                                </div>
+                                <div class="profile__card-name">
+                                    <div class="profile__card-line">
+                                        <p class="profile__card-parameter">
+                                            имя
+                                        </p>
+                                        <p class="profile__card-text">
+                                            Виктория
+                                        </p>
+                                    </div>
+                                    <div class="profile__card-line">
+                                        <p class="profile__card-parameter">
+                                            фамилия
+                                        </p>
+                                        <p class="profile__card-text">
+                                            Иванова
+                                        </p>
+                                    </div>
+                                    <div class="profile__card-line">
+                                        <p class="profile__card-parameter">
+                                            отчество
+                                        </p>
+                                        <p class="profile__card-text">
+                                            Александровна
+                                        </p>
+                                    </div>
+                                    <div class="profile__card-line">
+                                        <p class="profile__card-parameter">
+                                            телефон
+                                        </p>
+                                        <p class="profile__card-text">
+                                            +7 999 598-12-45
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="profile__card-desc">
+                                    <div class="profile__card-line">
+                                        <p class="profile__card-parameter">
+                                            О себе
+                                        </p>
+                                        <p class="profile__card-text">
+                                            Живу в Волгограде, очень люблю
+                                            животных! Мечтаю завести много
+                                            зверей и построить приют. Пока что у
+                                            меня собака, кошка и рыбки :)
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="profile-section">
+                            <h2 class="title profile__title">Мои питомцы</h2>
+                            <a href="#" class="profile__card_banner">
+                                <div class="profile__banner-icon">
+                                    <img
+                                        src="/assets/images/profile/add-pet-icon.svg"
+                                        alt="cat and dog icon with a plus"
+                                    />
+                                </div>
+                                <div class="profile__banner-text">
+                                    ДОБАВИТЬ НОВОГО ПИТОМЦА
+                                </div>
+                            </a>
+
+                            <div class="profile__card">
+                                <div class="profile__card-picture">
+                                    <img
+                                        src="/assets/images/profile/dog-pfp.png"
+                                        alt="Dog photo"
+                                        class="profile-pfp"
+                                    />
+                                    <a class="profile__link" href="#"
+                                        >изменить</a
+                                    >
+                                </div>
+                                <div class="profile__card-name">
+                                    <div class="profile__card-line">
+                                        <h2 class="profile__card-title">
+                                            Громопетр
+                                        </h2>
+                                    </div>
+                                    <div class="profile__card-line">
+                                        <p class="profile__card-parameter">
+                                            тип
+                                        </p>
+                                        <p class="profile__card-text">Собака</p>
+                                    </div>
+                                    <div class="profile__card-line">
+                                        <p class="profile__card-parameter">
+                                            пол
+                                        </p>
+                                        <p class="profile__card-text">
+                                            Мужской
+                                        </p>
+                                    </div>
+                                    <div class="profile__card-line">
+                                        <p class="profile__card-parameter">
+                                            порода
+                                        </p>
+                                        <p class="profile__card-text">
+                                            Без породы
+                                        </p>
+                                    </div>
+                                    <div class="profile__card-line">
+                                        <p class="profile__card-parameter">
+                                            возраст
+                                        </p>
+                                        <p class="profile__card-text">
+                                            1 год 2 месяца
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="profile__card-desc">
+                                    <div
+                                        class="profile__card-line profile__card-line_special"
+                                    >
+                                        <p class="profile__card-parameter">
+                                            медицинская карта
+                                        </p>
+                                        <a
+                                            href="#"
+                                            class="profile__card-document document document_medcart"
+                                        >
+                                            <img
+                                                src="/assets/images/profile/pdf-icon.svg"
+                                                alt="pdf file"
+                                            />
+                                            <div class="document__name">
+                                                <p
+                                                    class="profile__card-text document-text_medcart"
+                                                >
+                                                    10255
+                                                </p>
+                                                <p
+                                                    class="profile__card-parameter document__parameter"
+                                                >
+                                                    обновлена 25.06.19
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="profile__card-line">
+                                        <p class="profile__card-parameter">
+                                            результаты анализов
+                                        </p>
+                                        <a
+                                            href="#"
+                                            class="profile__card-document document"
+                                        >
+                                            <img
+                                                src="/assets/images/profile/pdf-icon.svg"
+                                                alt="pdf file"
+                                            />
+                                            <div class="document__name">
+                                                <p
+                                                    class="profile__card-text document-text_analyzes"
+                                                >
+                                                    ОАК
+                                                </p>
+                                                <p
+                                                    class="profile__card-parameter document__parameter"
+                                                >
+                                                    25.06.19
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <a
+                                            href="#"
+                                            class="profile__card-document document"
+                                        >
+                                            <img
+                                                src="/assets/images/profile/pdf-icon.svg"
+                                                alt="pdf file"
+                                            />
+                                            <div class="document__name">
+                                                <p
+                                                    class="profile__card-text document-text_analyzes"
+                                                >
+                                                    Узи брюшной полости
+                                                </p>
+                                                <p
+                                                    class="profile__card-parameter document__parameter"
+                                                >
+                                                    25.06.19
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <a
+                                            href="#"
+                                            class="profile__card-document document"
+                                        >
+                                            <img
+                                                src="/assets/images/profile/pdf-icon.svg"
+                                                alt="pdf file"
+                                            />
+                                            <div class="document__name">
+                                                <p
+                                                    class="profile__card-text document-text_analyzes"
+                                                >
+                                                    Биохимия крови
+                                                </p>
+                                                <p
+                                                    class="profile__card-parameter document__parameter"
+                                                >
+                                                    25.06.19
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <a
+                                            href="#"
+                                            class="profile__card-document document"
+                                        >
+                                            <img
+                                                src="/assets/images/profile/pdf-icon.svg"
+                                                alt="pdf file"
+                                            />
+                                            <div class="document__name">
+                                                <p
+                                                    class="profile__card-text document-text_analyzes"
+                                                >
+                                                    Анализ очень длинное
+                                                    название файла а вы умеете
+                                                    так делать?
+                                                </p>
+                                                <p
+                                                    class="profile__card-parameter document__parameter"
+                                                >
+                                                    25.06.19
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile__card">
+                                <div class="profile__card-picture">
+                                    <img
+                                        src="/assets/images/profile/cat-pfp.png"
+                                        alt="Dog photo"
+                                        class="profile-pfp"
+                                    />
+                                    <a class="profile__link" href="#"
+                                        >изменить</a
+                                    >
+                                </div>
+                                <div class="profile__card-name">
+                                    <div class="profile__card-line">
+                                        <h2 class="profile__card-title">
+                                            Имя питомца
+                                        </h2>
+                                    </div>
+                                    <div class="profile__card-line">
+                                        <p class="profile__card-parameter">
+                                            тип
+                                        </p>
+                                        <p class="profile__card-text">Кошка</p>
+                                    </div>
+                                    <div class="profile__card-line">
+                                        <p class="profile__card-parameter">
+                                            пол
+                                        </p>
+                                        <p class="profile__card-text">
+                                            Женский
+                                        </p>
+                                    </div>
+                                    <div class="profile__card-line">
+                                        <p class="profile__card-parameter">
+                                            порода
+                                        </p>
+                                        <p class="profile__card-text">
+                                            Русская голубая
+                                        </p>
+                                    </div>
+                                    <div class="profile__card-line">
+                                        <p class="profile__card-parameter">
+                                            возраст
+                                        </p>
+                                        <p class="profile__card-text">
+                                            4 месяца
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="profile__card-desc">
+                                    <div
+                                        class="profile__card-line profile__card-line_special"
+                                    >
+                                        <p class="profile__card-parameter">
+                                            медицинская карта
+                                        </p>
+                                        <p class="profile__card-text">
+                                            Медицинскую карту заводят при первом
+                                            посещении клиники и обновляют при
+                                            каждом обращении. Здесь вы сможете
+                                            посмотреть и скачать актуальную
+                                            карту в формате pdf
+                                        </p>
+                                    </div>
+                                    <div class="profile__card-line">
+                                        <p class="profile__card-parameter">
+                                            результаты анализов
+                                        </p>
+                                        <p class="profile__card-text">
+                                            Пока нет готовых анализов
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-section">
+                            <h2 class="title profile__title">
+                                Запись на прием
+                            </h2>
+                            <div class="profile__card profile__card_doctor">
+                                <div class="profile__card-picture">
+                                    <img
+                                        src="/assets/images/profile/doctor-pfp.png"
+                                        alt="Doctor's photo"
+                                        class="profile-pfp"
+                                    />
+                                    <a class="profile__link" href="#"
+                                        >отменить прием</a
+                                    >
+                                </div>
+                                <div class="profile__card-name">
+                                    <div class="profile__card-line">
+                                        <p class="profile__card-parameter">
+                                            врач
+                                        </p>
+                                        <p class="profile__card-text">
+                                            Иванова Ирина Владимировна
+                                        </p>
+                                    </div>
+                                    <div class="profile__card-line">
+                                        <p class="profile__card-parameter">
+                                            ветклиника
+                                        </p>
+                                        <p class="profile__card-text">
+                                            Айболит на Краснополянской
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="profile__card-desc">
+                                    <div class="profile__card-line">
+                                        <p class="profile__card-parameter">
+                                            питомец
+                                        </p>
+                                        <p class="profile__card-text">
+                                            Громопетр
+                                        </p>
+                                    </div>
+                                    <div class="profile__card-line">
+                                        <p class="profile__card-parameter">
+                                            дата
+                                        </p>
+                                        <p class="profile__card-text">
+                                            15.10.19
+                                        </p>
+                                    </div>
+                                    <div class="profile__card-line">
+                                        <p class="profile__card-parameter">
+                                            время
+                                        </p>
+                                        <p class="profile__card-text">15:45</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
