@@ -11,7 +11,7 @@
 
 .slider-items {
   position: absolute;
-  max-width: calc(100vw - 40.63vw);
+  max-width: calc(100vw - 40vw);
   overflow: hidden;
 
   @media (max-width: 1024px) {
@@ -185,7 +185,7 @@
 .slider-container {
   position: relative;
   max-width: calc(100vw - (100vw - 77vw) / 2);
-  margin-left: calc(100vw - 88.5vw);
+  margin-left: calc(100vw - 90vw);
   overflow: hidden;
 
   &__btn-next {

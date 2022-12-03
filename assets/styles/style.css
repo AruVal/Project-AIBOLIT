@@ -458,6 +458,12 @@ img {
   border-radius: clamp(14px, 1vw, 20px);
   background-color: #fff;
 }
+.order__input::-moz-placeholder {
+  color: #C3B9B5;
+}
+.order__input:-ms-input-placeholder {
+  color: #C3B9B5;
+}
 .order__input::placeholder {
   color: #C3B9B5;
 }
@@ -740,7 +746,8 @@ img {
 .web-socials {
   display: flex;
   flex-direction: row;
-  column-gap: 2.6vw;
+  -moz-column-gap: 2.6vw;
+       column-gap: 2.6vw;
 }
 
 .footer-contacts__socials > a {
@@ -911,7 +918,7 @@ img {
 
 .slider-items {
   position: absolute;
-  max-width: 59.37vw;
+  max-width: 60vw;
   overflow: hidden;
 }
 @media (max-width: 1024px) {
@@ -1224,6 +1231,7 @@ img {
 }
 .team__cards {
   display: grid;
+  grid-auto-rows: -webkit-max-content;
   grid-auto-rows: max-content;
   grid-template-columns: 1fr 1fr;
   gap: clamp(14px, 1.3vw, 25px);
@@ -1242,7 +1250,8 @@ img {
   border-radius: clamp(14px, 1vw, 20px);
   background-color: #fff;
   padding: clamp(20px, 1.56vw, 30px);
-  column-gap: clamp(14px, 1vw, 20px);
+  -moz-column-gap: clamp(14px, 1vw, 20px);
+       column-gap: clamp(14px, 1vw, 20px);
 }
 @media (max-width: 1440px) {
   .team__card {
