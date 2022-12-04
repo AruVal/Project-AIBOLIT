@@ -1,0 +1,112 @@
+#offer {
+    width: 100vw;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.offer_slider_bar {
+    display: flex;
+    align-items: center;
+    margin-top: clamp(100px, 1.5vw, 120px);
+    margin-left: clamp(100px, 1vw, 110px);
+}
+.offer_input {
+    display: flex;
+    max-width: 40vw;
+    height: 49vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#check-1 {
+    width: 2vw;
+}
+.offer_slide_content {
+    max-width: 67vw;
+    padding-left: clamp(100px, 1vw, 110px);
+}
+.offer_header {
+    max-width: 64vw;
+    margin-top: 113px;
+    margin-bottom: 50px;
+}
+
+.offer_button {
+    display: inline-block;
+    max-width: 67vw;
+    height: 67px;
+    padding: 24px 77px 23px 77px;
+    border-radius: 35px;
+
+    font-family: "Futura New";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+
+    color: #ffffff;
+    background-color: #ffc59e;
+    text-decoration: none;
+}
+.offer_button:hover {
+    background-color: #59443f;
+    transform: translateY(-0.5px);
+}
+
+.web-socials-slider {
+    max-width: 31vw;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+    column-gap: 2.6vw;
+    height: clamp(70px, 5.73vw, 110px);
+    margin-top: clamp(100px, 1.5vw, 120px);
+    margin-bottom: clamp(30px, 1vw, 50px);
+
+    filter: invert(83%) sepia(29%) saturate(181%) hue-rotate(214deg) brightness(99%) contrast(92%);
+}
+.offer_fb:hover,
+.offer_inst:hover,
+.offer_vk:hover,
+.offer_ytb:hover {
+    filter: invert(23%) sepia(3%) saturate(4731%) hue-rotate(323deg) brightness(103%) contrast(84%);
+}
+
+.offer_wrap {
+    max-width: 49vw;
+    position: relative;
+    display: inline-block;
+}
+
+.img_offer_slide_1 {
+    max-width: 49vw;
+    position: relativeф;
+    margin-top: clamp (120px, 1.2vw, 102px);
+}
+.offer_number {
+    z-index: 1;
+    position: absolute;
+    left: 38vw;
+    top: 80vh;
+
+    font-family: "Futura New";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.25;
+    color: #59443f;
+}
+@media (max-width: 820px) {
+    .offer {
+        flex-direction: column;
+    }
+    .offer_slider_bar {
+        display: none;
+    }
+    .web-socials-slider {
+        margin-top: clamp(20px, 1vw, 30px);
+    }
+}
