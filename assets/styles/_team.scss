@@ -6,11 +6,7 @@
   }
 
   &__cards {
-
-
-
     display: grid;
-    grid-auto-rows: max-content;
     grid-template-columns: 1fr 1fr;
     gap: clamp(14px, 1.3vw, 25px);
     margin: clamp(20px, 2.6vw, 50px) 0;
@@ -21,7 +17,7 @@
   }
 
   &__card {
-
+    height: 100%;
     display: grid;
     grid-template: 1fr / 1fr 1.55fr;
     grid-template-areas: "left right";
@@ -63,7 +59,7 @@
     }
   }
 
-  &__expirience {
+  &__experience {
     display: flex;
     justify-content: center;
     margin-bottom: clamp(14px, 1vw, 20px);
@@ -122,9 +118,6 @@
   &__name {
     padding-bottom: clamp(14px, 1vw, 20px);
   }
-
-
-
 
 }
 
