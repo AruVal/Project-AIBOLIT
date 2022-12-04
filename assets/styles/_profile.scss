@@ -79,7 +79,7 @@
 }
 
 .profile__banner-text {
-    @include Futura-New(700, 2.78vmin, 2.78vmin);
+    @include Futura-New(700, 1em, 1.5em);
     color: $white;
 }
 
@@ -134,6 +134,10 @@
     display: flex;
 }
 
+.profile {
+    font-size: 2vmax;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .profile__nav-items {
         grid-template-columns: repeat(4, auto);
@@ -148,5 +152,31 @@
 @media screen and (max-width: 767px) {
     .profile__nav-items {
         display: none;
+    }
+    .profile__card {
+        display: grid;
+        grid-template-columns: unset;
+        grid-template-rows: repeat(3, auto);
+    }
+    .profile-pfp {
+        max-width: 50%;
+    }
+}
+@media screen and (max-width: 1023px) {
+    .profile__card-parameter {
+        font-size: 1em;
+        line-height: 1em;
+    }
+    .profile__card-text {
+        font-size: 1.2em;
+        line-height: 1.3em;
+    }
+    .profile__link {
+        font-size: 1.2em;
+        line-height: 1.8em;
+    }
+    .profile__card-title {
+        font-size: 1.5em;
+        line-height: 3em;
     }
 }

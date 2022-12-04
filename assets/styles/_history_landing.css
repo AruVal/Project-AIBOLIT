@@ -37,12 +37,12 @@
     flex-direction: column;
     justify-content: center;
 }
-.title {
+.history-landing-title {
     text-align: center;
     margin-bottom: clamp(30px, 1.5vw, 32px);
 }
 
-.text {
+.history-landing-text {
     margin-bottom: clamp(48px, 2vw, 52px);
 }
 .link_wrap {

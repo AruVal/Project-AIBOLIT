@@ -4,8 +4,10 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="./assets/images/landing/favicon.png" />
         <link rel="stylesheet" href="/styles/normalize.css" />
         <link rel="stylesheet" href="/styles/style.css" />
+
         <title>Личный кабинет - Айболит круглосуточная ветклиника</title>
     </head>
     <body>
@@ -108,21 +110,23 @@
                                     <li
                                         class="section__nav-item profile__nav-item"
                                     >
-                                        <a class="nav-link link" href="#"
+                                        <a class="nav-link link" href="#profile"
                                             >ЛИЧНЫЕ ДАННЫЕ</a
                                         >
                                     </li>
                                     <li
                                         class="section__nav-item profile__nav-item"
                                     >
-                                        <a class="nav-link link" href="#"
+                                        <a class="nav-link link" href="#mypets"
                                             >МОИ ПИТОМЦЫ</a
                                         >
                                     </li>
                                     <li
                                         class="section__nav-item profile__nav-item section__nav-item_flex"
                                     >
-                                        <a class="nav-link link" href="#"
+                                        <a
+                                            class="nav-link link"
+                                            href="#appointments"
                                             >ЗАПИСЬ НА ПРИЕМ</a
                                         >
                                         <img
@@ -134,7 +138,9 @@
                                     <li
                                         class="section__nav-item profile__nav-item"
                                     >
-                                        <a class="nav-link link" href="#"
+                                        <a
+                                            class="nav-link link"
+                                            href="/index.html"
                                             >ВЫЙТИ</a
                                         >
                                     </li>
@@ -143,7 +149,7 @@
                         </div>
                         <div class="section__part">
                             <div class="profile-section">
-                                <h2 class="title profile__title">
+                                <h2 class="title profile__title" id="profile">
                                     Личные данные
                                 </h2>
                                 <div class="profile__card">
@@ -154,14 +160,12 @@
                                             class="profile-pfp"
                                         />
                                         <a class="profile__link" href="#"
-                                            >изменить</a
+                                            >изме&shy;нить</a
                                         >
                                     </div>
                                     <div class="profile__card-name">
                                         <div class="profile__card-line">
-                                            <p
-                                                class="profile__card-parameter text_tiny"
-                                            >
+                                            <p class="profile__card-parameter">
                                                 имя
                                             </p>
                                             <p class="profile__card-text">
@@ -181,7 +185,7 @@
                                                 отчество
                                             </p>
                                             <p class="profile__card-text">
-                                                Александровна
+                                                Алек&shy;сан&shy;дровна
                                             </p>
                                         </div>
                                         <div class="profile__card-line">
@@ -211,7 +215,7 @@
                             </div>
 
                             <div class="profile-section">
-                                <h2 class="title profile__title">
+                                <h2 class="title profile__title" id="mypets">
                                     Мои питомцы
                                 </h2>
                                 <a href="#" class="profile__card_banner">
@@ -234,7 +238,7 @@
                                             class="profile-pfp"
                                         />
                                         <a class="profile__link" href="#"
-                                            >изменить</a
+                                            >изме&shy;нить</a
                                         >
                                     </div>
                                     <div class="profile__card-name">
@@ -406,7 +410,7 @@
                                             class="profile-pfp"
                                         />
                                         <a class="profile__link" href="#"
-                                            >изменить</a
+                                            >изме&shy;нить</a
                                         >
                                     </div>
                                     <div class="profile__card-name">
@@ -476,7 +480,10 @@
                                 </div>
                             </div>
                             <div class="profile-section">
-                                <h2 class="title profile__title">
+                                <h2
+                                    class="title profile__title"
+                                    id="appointments"
+                                >
                                     Запись на прием
                                 </h2>
                                 <div class="profile__card profile__card_doctor">
