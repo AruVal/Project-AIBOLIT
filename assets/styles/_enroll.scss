@@ -32,7 +32,7 @@
   text-decoration: none;
   color: $button-color;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1023px) {
     margin-left: 0;
   }
 }
@@ -57,7 +57,7 @@
   grid-template-columns: 28.64vw 47.36vw;
   grid-template-areas: "title part";
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1023px) {
     grid-template-columns: 100%;
     grid-template-areas: "title"
       "part";

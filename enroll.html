@@ -5,36 +5,260 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./assets/images/landing/favicon.png">
   <link rel="stylesheet" href="/styles/normalize.css" />
   <link rel="stylesheet" href="/styles/style.css" />
   <title>Запись на прием</title>
 </head>
 
 <body>
+  <header class="web-header">
+    <div class="web-header__container">
+        <a class="web-header__logo landing-logo" href="/index.html">
+            <img
+                src="/assets/images/landing/ico/logo.svg"
+                alt="Company logo"
+                class=""
+        /></a>
+        <ul class="web-header__menu">
+            <li>
+                <a class="web-header__menu-item" href="/profile.html"
+                    >ЛИЧНЫЙ&nbsp;КАБИНЕТ</a
+                >
+            </li>
+            <li class="web-header__dropdown-link">
+                <a
+                    class="web-header__menu-item"
+                    href="/file-services.html"
+                    >О&nbsp;НАС</a
+                >
+                <div class="web-header__dropdown-menu">
+                    <a href="/file-services.html">Услуги и цены</a>
+                    <a href="/team.html">Коллектив</a>
+                    <a href="./history.html">История компании</a>
+                </div>
+            </li>
+            <li>
+                <a
+                    class="web-header__menu-item"
+                    href="/news-and-discounts.html"
+                    >НОВОСТИ&nbsp;И&nbsp;АКЦИИ</a
+                >
+            </li>
+            <li>
+                <a
+                    class="web-header__menu-item"
+                    href="/map-contacts.html"
+                    >КОНТАКТЫ</a
+                >
+            </li>
+            <li>
+                <a class="web-header__menu-item" href="/blog.html"
+                    >БЛОГ</a
+                >
+            </li>
+        </ul>
+        <div class="burger" role="navigation">
+            <input type="checkbox" class="burger__checkbox" />
+            <div class="burger__icon" id="menuToggle"></div>
+            <ul class="burger__menu" id="menu">
+                <li><a href="/profile.html">ЛИЧНЫЙ&nbsp;КАБИНЕТ</a></li>
+                <li>
+                    <a href="./file-services.html"
+                        >УСЛУГИ&nbsp;И&nbsp;ЦЕНЫ</a
+                    >
+                </li>
+                <li><a href="/team.html">КОЛЛЕКТИВ</a></li>
+                <li>
+                    <a href="/history.html">ИСТОРИЯ&nbsp;КОМПАНИИ</a>
+                </li>
+                <li>
+                    <a href="/news-and-discounts.html"
+                        >НОВОСТИ&nbsp;И&nbsp;АКЦИИ</a
+                    >
+                </li>
+                <li><a href="./map-contacts.html">КОНТАКТЫ</a></li>
+                <li><a href="/blog.html">БЛОГ</a></li>
+            </ul>
+        </div>
 
-  <div class="container">
-    <div class="enroll section">
-      <a class="breadcrumbs" href="./index.html">
-        <div class="breadcrumps__arrow"></div>
-        <p class="breadcrumps__title">Назад</p>
-      </a>
-      <div class="section__row">
-        <h1 class="section__title main-title">Запись на прием</h1>
-        <div class="section__part enroll__btns">
-          <a class="enroll__btn" href="./order_online_inactive.html">
-            <div class="enroll__service">
-              Онлайн-консультация
-            </div>
-            <div class="enroll_price">2000 ₽</div>
-          </a>
-          <a class="enroll__btn" href="./order_offline.html">
-            <div class="enroll__service">Прием в клинике</div>
-            <div class="enroll_price">Бесплатно</div>
-          </a>
+        <a href="#" class="web-header__location">
+            <img
+                class="web-header__location-img"
+                src="/assets/images/landing/ico/location.svg"
+                alt="location marker"
+            />
+            <p class="web-header__location-text">ВОЛГОГРАД</p>
+        </a>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="enroll section mg310">
+        <a class="breadcrumbs" href="./index.html">
+          <div class="breadcrumps__arrow"></div>
+          <p class="breadcrumps__title">Назад</p>
+        </a>
+        <div class="section__row">
+          <h1 class="section__title main-title">Запись на прием</h1>
+          <div class="section__part enroll__btns">
+            <a class="enroll__btn" href="./order_online_inactive.html">
+              <div class="enroll__service">
+                Онлайн-консультация
+              </div>
+              <div class="enroll_price">2000 ₽</div>
+            </a>
+            <a class="enroll__btn" href="./order_offline.html">
+              <div class="enroll__service">Прием в клинике</div>
+              <div class="enroll_price">Бесплатно</div>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </main>
+  <footer class="web-footer">
+    <div class="web-footer__container">
+        <div class="web-footer__nav footer-nav">
+            <div class="footer-nav__logo">
+                <a
+                    href="index.html"
+                    class="footer-nav__logo-container landing-logo"
+                >
+                    <img
+                        src="/assets/images/landing/ico/logo-round.svg"
+                        alt="Company logo"
+                        class="footer-nav__logo-img"
+                    />
+                    <div>
+                        <p class="footer-nav__title">Айболит</p>
+                        <p class="footer-nav__subtitle">
+                            ветеринарная клиника
+                        </p>
+                    </div></a
+                >
+            </div>
+            <div class="footer-nav__nav-items">
+                <div class="footer-nav__nav-item">
+                    <a href="#" class="footer-nav__nav-item-link"
+                        >Политика конфи&shy;ден&shy;циаль&shy;ности в
+                        отношении обработки персо&shy;нальных данных</a
+                    >
+                </div>
+                <div class="footer-nav__nav-item">
+                    <a
+                        href="/index.html"
+                        class="footer-nav__nav-item-link"
+                        >Главная
+                    </a>
+                    <a
+                        href="/file-services.html"
+                        class="footer-nav__nav-item-link"
+                        >Услуги и цены
+                    </a>
+                    <a
+                        href="/history.html"
+                        class="footer-nav__nav-item-link"
+                        >История компании
+                    </a>
+                    <a
+                        href="/team.html"
+                        class="footer-nav__nav-item-link"
+                        >Наши специа&shy;листы
+                    </a>
+                    <a href="#" class="footer-nav__nav-item-link"
+                        >Вакансии
+                    </a>
+                    <a href="#" class="footer-nav__nav-item-link"
+                        >Реквизиты
+                    </a>
+                    <a
+                        href="/order_online_inactive.html"
+                        class="footer-nav__nav-item-link"
+                        >Онлайн-оплата</a
+                    >
+                </div>
+                <div class="footer-nav__nav-item">
+                    <a href="#" class="footer-nav__nav-item-link"
+                        >Отзывы</a
+                    >
+                    <a
+                        href="/map-contacts.html"
+                        class="footer-nav__nav-item-link"
+                        >Контакты</a
+                    >
+                    <a href="#" class="footer-nav__nav-item-link"
+                        >Груминг-салон</a
+                    >
+                    <a href="#" class="footer-nav__nav-item-link"
+                        >Косметика</a
+                    >
+                    <a
+                        href="/news-and-discounts.html"
+                        class="footer-nav__nav-item-link"
+                        >Новости и акции</a
+                    >
+                    <a
+                        href="/blog.html"
+                        class="footer-nav__nav-item-link"
+                        >Блог</a
+                    >
+                </div>
+            </div>
+        </div>
+        <div class="web-footer__contacts footer-contacts">
+            <div class="footer-contacts__apps web-apps">
+                <a href="#">
+                    <img
+                        src="/assets/images/landing/appstore.png"
+                        alt="Загрузите в AppStore"
+                        class="web-apps__app"
+                /></a>
+                <a href="#">
+                    <img
+                        src="/assets/images/landing/googleplay.png"
+                        alt="Доступно в Google Play"
+                        class="web-apps__app"
+                /></a>
+            </div>
+            <div class="footer-contacts__socials web-socials">
+                <a href="#">
+                    <img
+                        src="/assets/images/landing/social-ico/inst.svg"
+                        alt="Instagram link" /></a
+                ><a href="#"
+                    ><img
+                        src="/assets/images/landing/social-ico/fb.svg"
+                        alt="Facebook link" /></a
+                ><a href="#"
+                    ><img
+                        src="/assets/images/landing/social-ico/vk.svg"
+                        alt="VK link" /></a
+                ><a href="#"
+                    ><img
+                        src="/assets/images/landing/social-ico/youtube.svg"
+                        alt="Youtube link"
+                /></a>
+            </div>
+            <div class="footer-contacts__sites">
+                <a href="https://aibolit34.ru">aibolit34.ru</a
+                ><a href="https://aibolit34@gmail.com"
+                    >aibolit34@gmail.com</a
+                >
+            </div>
+            <div class="footer-contacts__credit">
+                <p>
+                    Made with
+                    <img
+                        src="/assets/images/landing/ico/black-heart.svg"
+                        alt=""
+                    />
+                    from UnitBean
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 
 </html>

@@ -34,7 +34,7 @@
         "right";
     }
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1023px) {
       grid-template: 1fr / 1fr 1.55fr;
       grid-template-areas: "left right";
     }
@@ -65,16 +65,6 @@
     margin-bottom: clamp(14px, 1vw, 20px);
     @include Futura-New (700, 15px, 20px);
     color: $button-color;
-
-    // @media (max-width: 1440px) {
-    //   justify-content: flex-start;
-    //   margin-bottom: 10px;
-    // }
-
-    // @media (max-width: 768px) {
-    //   justify-content: flex-start;
-    //   margin-bottom: 10px;
-    // }
   }
 
   &__part-left {
@@ -88,7 +78,7 @@
       align-items: flex-start;
     }
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1023px) {
       align-items: center;
     }
 

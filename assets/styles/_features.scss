@@ -27,7 +27,8 @@
 
   &__items {
     display: grid;
-    grid-gap: clamp(40px, 4.9vw, 94px);
+    column-gap: clamp(40px, 4.9vw, 94px);
+    row-gap: clamp(25px, 3.64vw, 70px);
     grid-template-columns: repeat(auto-fit, minmax(484px, 1fr));
 
     @media (max-width: 1920px) {
@@ -47,7 +48,7 @@
     color: $text-dark;
     padding-bottom: clamp(16px, 7.08vw, 36px);
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1023px) {
       display: flex;
       justify-content: center;
     }
@@ -62,7 +63,7 @@
     grid-template: 1fr / 1fr 1.9fr;
     grid-template-areas: "ico txt";
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1023px) {
       grid-template: 1fr / 1fr;
       grid-template-areas: "ico" "txt";
     }
@@ -76,7 +77,7 @@
     align-self: start;
     justify-self: center;
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1023px) {
       padding-bottom: 24px;
     }
   }
@@ -84,10 +85,15 @@
 
   &__desc {
     grid-area: txt;
+
   }
 }
 
 .text {
   color: $text-custom;
   @include Futura-New (400, clamp(16px, 1.04vw, 20px), clamp(20px, 1.56vw, 30px));
+}
+
+.mg240 {
+  margin-bottom: clamp(36px, 12.5vw, 240px);;
 }
