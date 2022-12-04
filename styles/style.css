@@ -86,6 +86,13 @@ img {
 .web-header__menu-item:hover {
   color: #59443F;
 }
+.web-header__menu-item:active {
+  color: #59443F;
+}
+
+.web-header__menu-item_active {
+  color: #59443F;
+}
 
 .web-header__dropdown-link {
   display: inline-block;
@@ -252,16 +259,16 @@ img {
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
-.burger__menu > a {
+.burger__menu > li {
+  padding: 10px 0;
+}
+.burger__menu > li > a {
   text-decoration: none;
   color: #C3B9B5;
   transition: color 0.3s ease;
 }
-.burger__menu > a:hover {
+.burger__menu > li > a:hover {
   color: #59443F;
-}
-.burger__menu > a > li {
-  padding: 10px 0;
 }
 
 @media screen and (max-width: 767px) {
@@ -931,8 +938,8 @@ img {
   flex-direction: row;
   justify-content: flex-start;
   gap: 1.35vmax;
-  margin-left: 12vmax;
-  margin-right: 12vmax;
+  margin-left: 8vmax;
+  margin-right: 7vmax;
   margin-top: 21.76vmin;
   margin-bottom: 20vmin;
 }
@@ -941,6 +948,10 @@ img {
 .map-desc {
   display: flex;
   flex-direction: column;
+}
+
+.landing-map_page {
+  margin-top: 0;
 }
 
 .map-desc__title {
@@ -997,6 +1008,10 @@ img {
   display: none;
 }
 
+.map-desc__breadcrumps {
+  margin-left: 0;
+}
+
 @media screen and (max-width: 1023px) {
   .landing-map {
     flex-direction: column;
@@ -1029,6 +1044,9 @@ img {
 @media screen and (min-width: 1024px) {
   .landing-map {
     flex-wrap: wrap;
+  }
+  .landing-map__map {
+    margin-top: 16.49vh;
   }
 }
 .service__title {
@@ -1217,6 +1235,7 @@ img {
 .slider-container {
   position: relative;
   max-width: 88.5vw;
+  margin-left: 11.5vw;
   margin-left: 11.5vw;
   overflow: hidden;
 }
@@ -1556,7 +1575,8 @@ img {
   flex-direction: column;
 }
 
-.profile__card-parameter {
+.profile__card-parameter,
+.text_tiny {
   font-family: "Futura New";
   font-weight: 400;
   font-size: 1.39vmin;
@@ -1672,6 +1692,105 @@ img {
 @media screen and (max-width: 767px) {
   .profile__nav-items {
     display: none;
+  }
+}
+.blog-news__label {
+  justify-content: flex-end;
+}
+
+.blog-news {
+  margin-top: 10vmin;
+  margin-bottom: 10vmin;
+}
+
+.blog-news__post {
+  display: grid;
+  grid-template-columns: 28% 1fr;
+  align-items: center;
+}
+
+.blog-news__post-img {
+  border-radius: 20px;
+}
+
+.blog-news__post-desc {
+  padding: 2.78vmin;
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.blog-news__post-title {
+  font-family: "SchoolBook";
+  font-weight: 400;
+  font-size: 2.78vmin;
+  line-height: 4.63vmin;
+  padding-bottom: 1.85vmin;
+  color: #080606;
+}
+.blog-news__post-title:hover {
+  text-decoration: underline;
+}
+
+.blog-news__post-text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-height: 5em;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.blog-news__part {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5.56vmin;
+}
+
+.blog-text {
+  font-family: "Futura New";
+  font-weight: 400;
+  font-size: 1.85vmin;
+  line-height: 2.31vmin;
+  color: #59443F;
+}
+
+.blog-news__post_outdated {
+  opacity: 0.5;
+}
+
+.blog-news__post-title_expired:hover {
+  text-decoration: none;
+}
+
+.blog-news__text-expired {
+  opacity: 1;
+  color: black;
+}
+
+@media screen and (max-width: 767px) {
+  .blog-news__post {
+    display: flex;
+    flex-direction: column;
+    align-items: unset;
+  }
+  .blog-news__post-img {
+    max-width: 30%;
+    padding-left: 2.78vmin;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .blog-text {
+    font-size: clamp(16px, 1.04vw, 20px);
+    line-height: clamp(20px, 1.56vw, 30px);
+    -webkit-line-clamp: 2;
+  }
+  .blog-news__post-title {
+    font-size: clamp(32px, 2.08vw, 40px);
+    line-height: clamp(32px, 2.08vw, 40px);
+  }
+  .text_tiny {
+    font-size: 2.04vw;
   }
 }
 .doctor-enroll {
