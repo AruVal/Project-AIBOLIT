@@ -659,7 +659,7 @@ img {
   padding: 24px 16px 0;
 }
 .order__btn {
-  margin: 40px 0;
+  margin: clamp(36px, 2.08vw, 40px) 0 clamp(36px, 2.08vw, 40px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -671,6 +671,25 @@ img {
   font-size: 20px;
   line-height: 25px;
   color: #59443F;
+}
+
+.btn-link-order {
+  font-family: "Futura New";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  margin: clamp(36px, 3.03vw, 64px) 0;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: auto;
+}
+
+.mg100 {
+  margin-bottom: clamp(40px, 5.2vw, 100px);
+}
+
+.mg310 {
+  margin-bottom: clamp(36px, 16.15vw, 310px);
 }
 
 .container1640 {
@@ -1164,11 +1183,11 @@ img {
 
 .services-section {
   background-color: #EDE9E8;
-  padding: clamp(30px, 2.6vw, 50px) 0;
+  padding: clamp(30px, 2.6vw, 50px) 0 clamp(180px, 19.1vw, 366px);
 }
 .services-section__wrapper {
-  position: relative;
-  background-color: #EDE9E8;
+  position: static;
+  margin-top: clamp(20px, 2.6vw, 50px);
 }
 
 .slider-card {
@@ -1235,7 +1254,6 @@ img {
 .slider-container {
   position: relative;
   max-width: 88.5vw;
-  margin-left: 11.5vw;
   margin-left: 11.5vw;
   overflow: hidden;
 }

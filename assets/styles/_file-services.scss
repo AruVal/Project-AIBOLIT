@@ -139,11 +139,11 @@
 
 .services-section {
     background-color: $bg-separate;
-    padding: clamp(30px, 2.6vw, 50px) 0;
+    padding: clamp(30px, 2.6vw, 50px) 0 clamp(180px, 19.1vw, 366px);
 
     &__wrapper {
-        position: relative;
-        background-color: $bg-separate;
+        position: static;
+        margin-top: clamp(20px, 2.6vw, 50px);
     }
 }
 

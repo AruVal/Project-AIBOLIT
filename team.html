@@ -5,247 +5,471 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./assets/images/landing/favicon.png">
   <link rel="stylesheet" href="/styles/normalize.css" />
   <link rel="stylesheet" href="./styles/style.css" />
   <title>Коллектив</title>
 </head>
 
 <body>
-
-  <div class="container">
-
-    <div class="team section">
-      <a class="breadcrumbs" href="./enroll.html">
-        <div class="breadcrumps__arrow"></div>
-        <p class="breadcrumps__title">Назад</p>
-      </a>
-      <div class="section__row">
-        <div class="section__aside section__title ">
-          <h1 class="section__mg main-title">Коллектив</h1>
-          <div class="section__nav">
-            <ul class="section__nav-items">
-              <li class="section__nav-item">
-                <a class="nav-link link" href="#about">О нас</a>
-              </li>
-              <li class="section__nav-item">
-                <a class="nav-link link" href="#doctors">Специалисты</a>
-              </li>
+  <header class="web-header">
+    <div class="web-header__container">
+        <a class="web-header__logo landing-logo" href="/index.html">
+            <img
+                src="/assets/images/landing/ico/logo.svg"
+                alt="Company logo"
+                class=""
+        /></a>
+        <ul class="web-header__menu">
+            <li>
+                <a class="web-header__menu-item" href="/profile.html"
+                    >ЛИЧНЫЙ&nbsp;КАБИНЕТ</a
+                >
+            </li>
+            <li class="web-header__dropdown-link">
+                <a
+                    class="web-header__menu-item"
+                    href="/file-services.html"
+                    >О&nbsp;НАС</a
+                >
+                <div class="web-header__dropdown-menu">
+                    <a href="/file-services.html">Услуги и цены</a>
+                    <a href="/team.html">Коллектив</a>
+                    <a href="./history.html">История компании</a>
+                </div>
+            </li>
+            <li>
+                <a
+                    class="web-header__menu-item"
+                    href="/news-and-discounts.html"
+                    >НОВОСТИ&nbsp;И&nbsp;АКЦИИ</a
+                >
+            </li>
+            <li>
+                <a
+                    class="web-header__menu-item"
+                    href="/map-contacts.html"
+                    >КОНТАКТЫ</a
+                >
+            </li>
+            <li>
+                <a class="web-header__menu-item" href="/blog.html"
+                    >БЛОГ</a
+                >
+            </li>
+        </ul>
+        <div class="burger" role="navigation">
+            <input type="checkbox" class="burger__checkbox" />
+            <div class="burger__icon" id="menuToggle"></div>
+            <ul class="burger__menu" id="menu">
+                <li><a href="/profile.html">ЛИЧНЫЙ&nbsp;КАБИНЕТ</a></li>
+                <li>
+                    <a href="./file-services.html"
+                        >УСЛУГИ&nbsp;И&nbsp;ЦЕНЫ</a
+                    >
+                </li>
+                <li><a href="/team.html">КОЛЛЕКТИВ</a></li>
+                <li>
+                    <a href="/history.html">ИСТОРИЯ&nbsp;КОМПАНИИ</a>
+                </li>
+                <li>
+                    <a href="/news-and-discounts.html"
+                        >НОВОСТИ&nbsp;И&nbsp;АКЦИИ</a
+                    >
+                </li>
+                <li><a href="./map-contacts.html">КОНТАКТЫ</a></li>
+                <li><a href="/blog.html">БЛОГ</a></li>
             </ul>
-          </div>
         </div>
-        <div class="section__part">
-          <article class="section__article section__article_history">
-            <div class="section__mg">
-              <div class="section__img-container section__img-container_history">
-                <img class="section__img " src="./assets/images/team/team-photo.jpg" alt="Кот под одеялом">
-              </div>
-              <h2 class="title" id="about">О нас</h2>
-              <p class="text section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <a href="#" class="web-header__location">
+            <img
+                class="web-header__location-img"
+                src="/assets/images/landing/ico/location.svg"
+                alt="location marker"
+            />
+            <p class="web-header__location-text">ВОЛГОГРАД</p>
+        </a>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+
+      <div class="team section">
+        <a class="breadcrumbs" href="./index.html">
+          <div class="breadcrumps__arrow"></div>
+          <p class="breadcrumps__title">Назад</p>
+        </a>
+        <div class="section__row">
+          <div class="section__aside section__title ">
+            <h1 class="section__mg main-title">Коллектив</h1>
+            <div class="section__nav">
+              <ul class="section__nav-items">
+                <li class="section__nav-item">
+                  <a class="nav-link link" href="#about">О нас</a>
+                </li>
+                <li class="section__nav-item">
+                  <a class="nav-link link" href="#doctors">Специалисты</a>
+                </li>
+              </ul>
             </div>
-
-            <div class="section__mg">
-              <h2 class="title" id="doctors">Специалисты</h2>
-              <div class="team__cards">
-
-                <a href="team_doctor.html" class="team__link">
-                  <div class="team__card">
-                    <div class="team__part-left">
-                      <img class="team__photo" src="./assets/images/team/doctor_red.png" alt="Фото врача">
-                      <p class="team__experience">стаж 10 лет</p>
-                    </div>
-                    <div class="team__part-right">
-                      <div class="team__name">
-                        <div class="team__post desc-text">врач</div>
-                        <div class="team__full-name grand-text">
-                          <div class="team__name1">Иванова</div>
-                          <div class="team__name2">Анастасия Андреевна</div>
-                        </div>
-                      </div>
-                      <div class="team__spec">
-                        <div class="team__spec-title desc-text">специализация</div>
-                        <div class="team__sphere grand-text">Терапия, УЗИ-диагностика, хирургия, ортопедия, лаборатория
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-
-                <a href="team_doctor.html" class="team__link">
-                  <div class="team__card">
-                    <div class="team__part-left">
-                      <img class="team__photo" src="./assets/images/team/doctor_blue.png" alt="Фото врача">
-                      <p class="team__experience">стаж 5 лет</p>
-                    </div>
-                    <div class="team__part-right">
-                      <div class="team__name">
-                        <div class="team__post desc-text">врач</div>
-                        <div class="team__full-name grand-text">
-                          <div class="team__name1">Константинопольский</div>
-                          <div class="team__name2">Константин Константинович</div>
-                        </div>
-                      </div>
-                      <div class="team__spec">
-                        <div class="team__spec-title desc-text">специализация</div>
-                        <div class="team__sphere grand-text">
-                          Врач общей практики
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-
-                <a href="team_doctor.html" class="team__link">
-                  <div class="team__card">
-                    <div class="team__part-left">
-                      <img class="team__photo" src="./assets/images/team/doctor_green.png" alt="Фото врача">
-                      <p class="team__experience">стаж 4 года</p>
-                    </div>
-                    <div class="team__part-right">
-                      <div class="team__name">
-                        <div class="team__post desc-text">ассистент ветеринарного врача</div>
-                        <div class="team__full-name grand-text">
-                          <div class="team__name1">Иванова</div>
-                          <div class="team__name2">Анастасия Андреевна</div>
-                        </div>
-                      </div>
-                      <div class="team__spec">
-                        <div class="team__spec-title desc-text">специализация</div>
-                        <div class="team__sphere grand-text">Анестезиология, стоматология, лаборатория
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-
-                <a href="team_doctor.html" class="team__link">
-                  <div class="team__card">
-                    <div class="team__part-left">
-                      <img class="team__photo" src="./assets/images/team/doctor_yellow.png" alt="Фото врача">
-                      <p class="team__experience">стаж 8 месяцев</p>
-                    </div>
-                    <div class="team__part-right">
-                      <div class="team__name">
-                        <div class="team__post desc-text">ординатор</div>
-                        <div class="team__full-name grand-text">
-                          <div class="team__name1">Константинопольский</div>
-                          <div class="team__name2">Константин Константинович</div>
-                        </div>
-                      </div>
-                      <div class="team__spec">
-                        <div class="team__spec-title desc-text">специализация</div>
-                        <div class="team__sphere grand-text">Врач общей практики
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-
-                <a href="team_doctor.html" class="team__link">
-                  <div class="team__card">
-                    <div class="team__part-left">
-                      <img class="team__photo" src="./assets/images/team/doctor_brown.png" alt="Фото врача">
-                      <p class="team__experience">стаж 1 год</p>
-                    </div>
-                    <div class="team__part-right">
-                      <div class="team__name">
-                        <div class="team__post desc-text">врач</div>
-                        <div class="team__full-name grand-text">
-                          <div class="team__name1">Иванова</div>
-                          <div class="team__name2">Анастасия Андреевна</div>
-                        </div>
-                      </div>
-                      <div class="team__spec">
-                        <div class="team__spec-title desc-text">специализация</div>
-                        <div class="team__sphere grand-text">Терапия, УЗИ-диагностика, хирургия, ортопедия, лаборатория
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-
-                <a href="team_doctor.html" class="team__link">
-                  <div class="team__card">
-                    <div class="team__part-left">
-                      <img class="team__photo" src="./assets/images/team/doctor_blue.png" alt="Фото врача">
-                      <p class="team__experience">стаж 5 лет</p>
-                    </div>
-                    <div class="team__part-right">
-                      <div class="team__name">
-                        <div class="team__post desc-text">врач</div>
-                        <div class="team__full-name grand-text">
-                          <div class="team__name1">Константинопольский</div>
-                          <div class="team__name2">Константин Константинович</div>
-                        </div>
-                      </div>
-                      <div class="team__spec">
-                        <div class="team__spec-title desc-text">специализация</div>
-                        <div class="team__sphere grand-text">
-                          Врач общей практики
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-
-                <a href="team_doctor.html" class="team__link">
-                  <div class="team__card">
-                    <div class="team__part-left">
-                      <img class="team__photo" src="./assets/images/team/doctor_green.png" alt="Фото врача">
-                      <p class="team__experience">стаж 4 года</p>
-                    </div>
-                    <div class="team__part-right">
-                      <div class="team__name">
-                        <div class="team__post desc-text">ассистент ветеринарного врача</div>
-                        <div class="team__full-name grand-text">
-                          <div class="team__name1">Иванова</div>
-                          <div class="team__name2">Анастасия Андреевна</div>
-                        </div>
-                      </div>
-                      <div class="team__spec">
-                        <div class="team__spec-title desc-text">специализация</div>
-                        <div class="team__sphere grand-text">Анестезиология, стоматология, лаборатория
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-
-                <a href="team_doctor.html" class="team__link">
-                  <div class="team__card">
-                    <div class="team__part-left">
-                      <img class="team__photo" src="./assets/images/team/doctor_yellow.png" alt="Фото врача">
-                      <p class="team__experience">стаж 3 месяца</p>
-                    </div>
-                    <div class="team__part-right">
-                      <div class="team__name">
-                        <div class="team__post desc-text">ординатор</div>
-                        <div class="team__full-name grand-text">
-                          <div class="team__name1">Константинопольский</div>
-                          <div class="team__name2">Константин Константинович</div>
-                        </div>
-                      </div>
-                      <div class="team__spec">
-                        <div class="team__spec-title desc-text">специализация</div>
-                        <div class="team__sphere grand-text">Врач общей практики
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-
+          </div>
+          <div class="section__part">
+            <article class="section__article section__article_history">
+              <div class="section__mg">
+                <div class="section__img-container section__img-container_history">
+                  <img class="section__img " src="./assets/images/team/team-photo.jpg" alt="Кот под одеялом">
+                </div>
+                <h2 class="title" id="about">О нас</h2>
+                <p class="text section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                  voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               </div>
-
-
-            </div>
-          </article>
+  
+              <div class="section__mg">
+                <h2 class="title" id="doctors">Специалисты</h2>
+                <div class="team__cards">
+  
+                  <a href="team_doctor.html" class="team__link">
+                    <div class="team__card">
+                      <div class="team__part-left">
+                        <img class="team__photo" src="./assets/images/team/doctor_red.png" alt="Фото врача">
+                        <p class="team__experience">стаж 10 лет</p>
+                      </div>
+                      <div class="team__part-right">
+                        <div class="team__name">
+                          <div class="team__post desc-text">врач</div>
+                          <div class="team__full-name grand-text">
+                            <div class="team__name1">Иванова</div>
+                            <div class="team__name2">Анастасия Андреевна</div>
+                          </div>
+                        </div>
+                        <div class="team__spec">
+                          <div class="team__spec-title desc-text">специализация</div>
+                          <div class="team__sphere grand-text">Терапия, УЗИ-диагностика, хирургия, ортопедия, лаборатория
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+  
+                  <a href="team_doctor.html" class="team__link">
+                    <div class="team__card">
+                      <div class="team__part-left">
+                        <img class="team__photo" src="./assets/images/team/doctor_blue.png" alt="Фото врача">
+                        <p class="team__experience">стаж 5 лет</p>
+                      </div>
+                      <div class="team__part-right">
+                        <div class="team__name">
+                          <div class="team__post desc-text">врач</div>
+                          <div class="team__full-name grand-text">
+                            <div class="team__name1">Константинопольский</div>
+                            <div class="team__name2">Константин Константинович</div>
+                          </div>
+                        </div>
+                        <div class="team__spec">
+                          <div class="team__spec-title desc-text">специализация</div>
+                          <div class="team__sphere grand-text">
+                            Врач общей практики
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+  
+                  <a href="team_doctor.html" class="team__link">
+                    <div class="team__card">
+                      <div class="team__part-left">
+                        <img class="team__photo" src="./assets/images/team/doctor_green.png" alt="Фото врача">
+                        <p class="team__experience">стаж 4 года</p>
+                      </div>
+                      <div class="team__part-right">
+                        <div class="team__name">
+                          <div class="team__post desc-text">ассистент ветеринарного врача</div>
+                          <div class="team__full-name grand-text">
+                            <div class="team__name1">Иванова</div>
+                            <div class="team__name2">Анастасия Андреевна</div>
+                          </div>
+                        </div>
+                        <div class="team__spec">
+                          <div class="team__spec-title desc-text">специализация</div>
+                          <div class="team__sphere grand-text">Анестезиология, стоматология, лаборатория
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+  
+                  <a href="team_doctor.html" class="team__link">
+                    <div class="team__card">
+                      <div class="team__part-left">
+                        <img class="team__photo" src="./assets/images/team/doctor_yellow.png" alt="Фото врача">
+                        <p class="team__experience">стаж 8 месяцев</p>
+                      </div>
+                      <div class="team__part-right">
+                        <div class="team__name">
+                          <div class="team__post desc-text">ординатор</div>
+                          <div class="team__full-name grand-text">
+                            <div class="team__name1">Константинопольский</div>
+                            <div class="team__name2">Константин Константинович</div>
+                          </div>
+                        </div>
+                        <div class="team__spec">
+                          <div class="team__spec-title desc-text">специализация</div>
+                          <div class="team__sphere grand-text">Врач общей практики
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+  
+                  <a href="team_doctor.html" class="team__link">
+                    <div class="team__card">
+                      <div class="team__part-left">
+                        <img class="team__photo" src="./assets/images/team/doctor_brown.png" alt="Фото врача">
+                        <p class="team__experience">стаж 1 год</p>
+                      </div>
+                      <div class="team__part-right">
+                        <div class="team__name">
+                          <div class="team__post desc-text">врач</div>
+                          <div class="team__full-name grand-text">
+                            <div class="team__name1">Иванова</div>
+                            <div class="team__name2">Анастасия Андреевна</div>
+                          </div>
+                        </div>
+                        <div class="team__spec">
+                          <div class="team__spec-title desc-text">специализация</div>
+                          <div class="team__sphere grand-text">Терапия, УЗИ-диагностика, хирургия, ортопедия, лаборатория
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+  
+                  <a href="team_doctor.html" class="team__link">
+                    <div class="team__card">
+                      <div class="team__part-left">
+                        <img class="team__photo" src="./assets/images/team/doctor_blue.png" alt="Фото врача">
+                        <p class="team__experience">стаж 5 лет</p>
+                      </div>
+                      <div class="team__part-right">
+                        <div class="team__name">
+                          <div class="team__post desc-text">врач</div>
+                          <div class="team__full-name grand-text">
+                            <div class="team__name1">Константинопольский</div>
+                            <div class="team__name2">Константин Константинович</div>
+                          </div>
+                        </div>
+                        <div class="team__spec">
+                          <div class="team__spec-title desc-text">специализация</div>
+                          <div class="team__sphere grand-text">
+                            Врач общей практики
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+  
+                  <a href="team_doctor.html" class="team__link">
+                    <div class="team__card">
+                      <div class="team__part-left">
+                        <img class="team__photo" src="./assets/images/team/doctor_green.png" alt="Фото врача">
+                        <p class="team__experience">стаж 4 года</p>
+                      </div>
+                      <div class="team__part-right">
+                        <div class="team__name">
+                          <div class="team__post desc-text">ассистент ветеринарного врача</div>
+                          <div class="team__full-name grand-text">
+                            <div class="team__name1">Иванова</div>
+                            <div class="team__name2">Анастасия Андреевна</div>
+                          </div>
+                        </div>
+                        <div class="team__spec">
+                          <div class="team__spec-title desc-text">специализация</div>
+                          <div class="team__sphere grand-text">Анестезиология, стоматология, лаборатория
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+  
+                  <a href="team_doctor.html" class="team__link">
+                    <div class="team__card">
+                      <div class="team__part-left">
+                        <img class="team__photo" src="./assets/images/team/doctor_yellow.png" alt="Фото врача">
+                        <p class="team__experience">стаж 3 месяца</p>
+                      </div>
+                      <div class="team__part-right">
+                        <div class="team__name">
+                          <div class="team__post desc-text">ординатор</div>
+                          <div class="team__full-name grand-text">
+                            <div class="team__name1">Константинопольский</div>
+                            <div class="team__name2">Константин Константинович</div>
+                          </div>
+                        </div>
+                        <div class="team__spec">
+                          <div class="team__spec-title desc-text">специализация</div>
+                          <div class="team__sphere grand-text">Врач общей практики
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+  
+                </div>
+  
+  
+              </div>
+            </article>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </main>
+  <footer class="web-footer">
+    <div class="web-footer__container">
+        <div class="web-footer__nav footer-nav">
+            <div class="footer-nav__logo">
+                <a
+                    href="index.html"
+                    class="footer-nav__logo-container landing-logo"
+                >
+                    <img
+                        src="/assets/images/landing/ico/logo-round.svg"
+                        alt="Company logo"
+                        class="footer-nav__logo-img"
+                    />
+                    <div>
+                        <p class="footer-nav__title">Айболит</p>
+                        <p class="footer-nav__subtitle">
+                            ветеринарная клиника
+                        </p>
+                    </div></a
+                >
+            </div>
+            <div class="footer-nav__nav-items">
+                <div class="footer-nav__nav-item">
+                    <a href="#" class="footer-nav__nav-item-link"
+                        >Политика конфи&shy;ден&shy;циаль&shy;ности в
+                        отношении обработки персо&shy;нальных данных</a
+                    >
+                </div>
+                <div class="footer-nav__nav-item">
+                    <a
+                        href="/index.html"
+                        class="footer-nav__nav-item-link"
+                        >Главная
+                    </a>
+                    <a
+                        href="/file-services.html"
+                        class="footer-nav__nav-item-link"
+                        >Услуги и цены
+                    </a>
+                    <a
+                        href="/history.html"
+                        class="footer-nav__nav-item-link"
+                        >История компании
+                    </a>
+                    <a
+                        href="/team.html"
+                        class="footer-nav__nav-item-link"
+                        >Наши специа&shy;листы
+                    </a>
+                    <a href="#" class="footer-nav__nav-item-link"
+                        >Вакансии
+                    </a>
+                    <a href="#" class="footer-nav__nav-item-link"
+                        >Реквизиты
+                    </a>
+                    <a
+                        href="/order_online_inactive.html"
+                        class="footer-nav__nav-item-link"
+                        >Онлайн-оплата</a
+                    >
+                </div>
+                <div class="footer-nav__nav-item">
+                    <a href="#" class="footer-nav__nav-item-link"
+                        >Отзывы</a
+                    >
+                    <a
+                        href="/map-contacts.html"
+                        class="footer-nav__nav-item-link"
+                        >Контакты</a
+                    >
+                    <a href="#" class="footer-nav__nav-item-link"
+                        >Груминг-салон</a
+                    >
+                    <a href="#" class="footer-nav__nav-item-link"
+                        >Косметика</a
+                    >
+                    <a
+                        href="/news-and-discounts.html"
+                        class="footer-nav__nav-item-link"
+                        >Новости и акции</a
+                    >
+                    <a
+                        href="/blog.html"
+                        class="footer-nav__nav-item-link"
+                        >Блог</a
+                    >
+                </div>
+            </div>
+        </div>
+        <div class="web-footer__contacts footer-contacts">
+            <div class="footer-contacts__apps web-apps">
+                <a href="#">
+                    <img
+                        src="/assets/images/landing/appstore.png"
+                        alt="Загрузите в AppStore"
+                        class="web-apps__app"
+                /></a>
+                <a href="#">
+                    <img
+                        src="/assets/images/landing/googleplay.png"
+                        alt="Доступно в Google Play"
+                        class="web-apps__app"
+                /></a>
+            </div>
+            <div class="footer-contacts__socials web-socials">
+                <a href="#">
+                    <img
+                        src="/assets/images/landing/social-ico/inst.svg"
+                        alt="Instagram link" /></a
+                ><a href="#"
+                    ><img
+                        src="/assets/images/landing/social-ico/fb.svg"
+                        alt="Facebook link" /></a
+                ><a href="#"
+                    ><img
+                        src="/assets/images/landing/social-ico/vk.svg"
+                        alt="VK link" /></a
+                ><a href="#"
+                    ><img
+                        src="/assets/images/landing/social-ico/youtube.svg"
+                        alt="Youtube link"
+                /></a>
+            </div>
+            <div class="footer-contacts__sites">
+                <a href="https://aibolit34.ru">aibolit34.ru</a
+                ><a href="https://aibolit34@gmail.com"
+                    >aibolit34@gmail.com</a
+                >
+            </div>
+            <div class="footer-contacts__credit">
+                <p>
+                    Made with
+                    <img
+                        src="/assets/images/landing/ico/black-heart.svg"
+                        alt=""
+                    />
+                    from UnitBean
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
 
 
 
