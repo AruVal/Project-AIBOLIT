@@ -83,7 +83,7 @@
 
 .img_offer_slide_1 {
     max-width: 49vw;
-    position: relativeф;
+    position: relative;
     margin-top: clamp (120px, 1.2vw, 102px);
 }
 .offer_number {
