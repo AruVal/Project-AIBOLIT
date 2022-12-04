@@ -381,6 +381,10 @@ img {
 }
 
 .enroll__btn {
+  font-family: "Futura New";
+  font-weight: 400;
+  font-size: 1.25em;
+  line-height: 1.5em;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -1649,8 +1653,8 @@ img {
 .profile__banner-text {
   font-family: "Futura New";
   font-weight: 700;
-  font-size: 2.78vmin;
-  line-height: 2.78vmin;
+  font-size: 1em;
+  line-height: 1.5em;
   color: #FFFFFF;
 }
 
@@ -1707,6 +1711,10 @@ img {
   display: flex;
 }
 
+.profile {
+  font-size: 2vmax;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .profile__nav-items {
     grid-template-columns: repeat(4, auto);
@@ -1719,6 +1727,32 @@ img {
 @media screen and (max-width: 767px) {
   .profile__nav-items {
     display: none;
+  }
+  .profile__card {
+    display: grid;
+    grid-template-columns: unset;
+    grid-template-rows: repeat(3, auto);
+  }
+  .profile-pfp {
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .profile__card-parameter {
+    font-size: 1em;
+    line-height: 1em;
+  }
+  .profile__card-text {
+    font-size: 1.2em;
+    line-height: 1.3em;
+  }
+  .profile__link {
+    font-size: 1.2em;
+    line-height: 1.8em;
+  }
+  .profile__card-title {
+    font-size: 1.5em;
+    line-height: 3em;
   }
 }
 .blog-news__label {
@@ -1981,4 +2015,4 @@ img {
 .review__answer {
   display: flex;
   gap: clamp(20px, 1.56vw, 30px);
-}/*# sourceMappingURL=style.css.map */
+}

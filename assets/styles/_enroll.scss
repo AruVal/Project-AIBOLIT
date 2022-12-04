@@ -1,90 +1,97 @@
-@import "./colors";
-@import "./mixins";
-
 .container {
-  max-width: 77vw;
-  margin: 0 auto;
+    max-width: 77vw;
+    margin: 0 auto;
 
-  @media (max-width: 768px) {
-    max-width: 100%;
-    padding: 0 20px;
-  }
+    @media (max-width: 768px) {
+        max-width: 100%;
+        padding: 0 20px;
+    }
 }
 
 .main-title {
-  @include SchoolBook (400, clamp(44px, 4.17vw, 80px), clamp(50px, 5.7vw, 110px));
-  color: $text-dark;
-  margin: 0;
+    @include SchoolBook(
+        400,
+        clamp(44px, 4.17vw, 80px),
+        clamp(50px, 5.7vw, 110px)
+    );
+    color: $text-dark;
+    margin: 0;
 }
 
 .section__title {
-  grid-area: title;
-  margin: 0 0 clamp(20px, 2.6vw, 50px);
+    grid-area: title;
+    margin: 0 0 clamp(20px, 2.6vw, 50px);
 }
 
 .breadcrumbs {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin-left: 28.64vw;
-  padding: clamp(40px, 3.9vw, 75px) 0 clamp(30px, 3.1vw, 60px);
-  cursor: pointer;
-  text-decoration: none;
-  color: $button-color;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: 28.64vw;
+    padding: clamp(40px, 3.9vw, 75px) 0 clamp(30px, 3.1vw, 60px);
+    cursor: pointer;
+    text-decoration: none;
+    color: $button-color;
 
-  @media (max-width: 1023px) {
-    margin-left: 0;
-  }
+    @media (max-width: 1023px) {
+        margin-left: 0;
+    }
 }
 
 .breadcrumps__arrow {
-  width: 7px;
-  height: 12px;
-  background-image: url('../assets/images/landing/ico/path_prev.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  filter: invert(10%) sepia(28%) saturate(6487%) hue-rotate(310deg) brightness(135%) contrast(104%);
-  ;
+    width: 7px;
+    height: 12px;
+    background-image: url("../assets/images/landing/ico/path_prev.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: invert(10%) sepia(28%) saturate(6487%) hue-rotate(310deg)
+        brightness(135%) contrast(104%);
 }
 
 .breadcrumps__title {
-  text-transform: uppercase;
-  @include Futura-New (700, clamp(16px, 1.1vw, 20px), clamp(16px, 1.1vw, 20px));
+    text-transform: uppercase;
+    @include Futura-New(
+        700,
+        clamp(16px, 1.1vw, 20px),
+        clamp(16px, 1.1vw, 20px)
+    );
 }
 
 .section__row {
-  display: grid;
-  grid-template-columns: 28.64vw 47.36vw;
-  grid-template-areas: "title part";
+    display: grid;
+    grid-template-columns: 28.64vw 47.36vw;
+    grid-template-areas: "title part";
 
-  @media (max-width: 1023px) {
-    grid-template-columns: 100%;
-    grid-template-areas: "title"
-      "part";
-  }
+    @media (max-width: 1023px) {
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "title"
+            "part";
+    }
 }
 
 .section__part {
-  grid-area: part;
+    grid-area: part;
 }
 
 .enroll__btns {
-  display: flex;
-  flex-direction: column;
-  gap: clamp(12px, 1.25vw, 24px);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(12px, 1.25vw, 24px);
 }
 
 .enroll__btn {
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
-  padding: clamp(16px, 1.7vw, 32px);
-  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
-  border-radius: clamp(14px, 1vw, 20px);
-  color: $text-dark;
-  cursor: pointer;
+    @include Futura-New(400, 1.25em, 1.5em);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding: clamp(16px, 1.7vw, 32px);
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+    border-radius: clamp(14px, 1vw, 20px);
+    color: $text-dark;
+    cursor: pointer;
 
-  &:hover {
-    border: 1px solid $inactive-link-color;
-  }
+    &:hover {
+        border: 1px solid $inactive-link-color;
+    }
 }
