@@ -4,7 +4,7 @@
     display: flex;
     align-content: center;
     justify-content: center;
-    background-color: #FBF8F8;
+    background-color: #fbf8f8;
 }
 
 .section_container {
@@ -17,18 +17,19 @@
     margin-right: 10vmax;
     margin-top: 16vmin;
     margin-bottom: 20vmin;
-    
 }
 @media (max-width: 768px) {
-    max-width: 100%;
-    padding: 0 20px;
+    .section_container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
 }
 .company_history {
     max-width: 60vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: clamp(60px, 0.8vw, 80px)
+    margin-bottom: clamp(60px, 0.8vw, 80px);
 }
 .company_staff {
     max-width: 85vw;
@@ -49,21 +50,21 @@
     flex-direction: row;
     justify-content: center;
     text-align: center;
-    
 }
 .more {
-    font-family: 'Futura New';
-    src: local('Futura New Bold Reg'), local('Futura-New-Bold-Reg');
+    font-family: "Futura New";
+    src: local("Futura New Bold Reg"), local("Futura-New-Bold-Reg");
     font-weight: 700;
     font-style: normal;
-    color: #FFC59E;
-    margin-bottom: clamp(30px, 1.5vw, 32px)
-
+    color: #ffc59e;
+    margin-bottom: clamp(30px, 1.5vw, 32px);
+    color: #ffc59e;
+    margin-bottom: clamp(30px, 1.5vw, 32px);
 }
 .iso_arrow {
     width: 24px;
     height: 20px;
-    background-image: url('../assets/images/landing/ico/arrow_small');
+    background-image: url("../assets/images/landing/ico/arrow_small");
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -73,9 +74,12 @@
     flex-direction: row;
     justify-content: center;
     margin-bottom: clamp(30px, 1.5vw, 32px);
+    justify-content: center;
 }
 @media (max-width: 820px) {
-    max-width: 100%;
+    .slider_staff {
+        max-width: 100%;
+    }
 }
 
 .circle {
