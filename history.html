@@ -4,238 +4,464 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="./assets/images/landing/favicon.png">
         <link rel="stylesheet" href="/styles/normalize.css" />
         <link rel="stylesheet" href="/styles/style.css" />
         <title>История компании</title>
     </head>
 
     <body>
-        <div class="container">
-            <div class="history section">
-                <a class="breadcrumbs" href="./index.html">
-                    <div class="breadcrumps__arrow"></div>
-                    <p class="breadcrumps__title">Назад</p>
-                </a>
-                <div class="section__row">
-                    <div class="section__aside section__title">
-                        <h1 class="section__mg main-title">История компании</h1>
-                        <div class="section__nav">
-                            <ul class="section__nav-items">
-                                <li class="section__nav-item">
-                                    <a class="nav-link link" href="#subtitlte1"
-                                        >Подзаголовок 1</a
-                                    >
-                                </li>
-                                <li class="section__nav-item">
-                                    <a class="nav-link link" href="#subtitlte2"
-                                        >Подзаголовок 2</a
-                                    >
-                                </li>
-                                <li class="section__nav-item">
-                                    <a class="nav-link link" href="#subtitlte3"
-                                        >Подзаголовок 3</a
-                                    >
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="section__part">
-                        <article
-                            class="section__article section__article_history"
+        <header class="web-header">
+            <div class="web-header__container">
+                <a class="web-header__logo landing-logo" href="/index.html">
+                    <img
+                        src="/assets/images/landing/ico/logo.svg"
+                        alt="Company logo"
+                        class=""
+                /></a>
+                <ul class="web-header__menu">
+                    <li>
+                        <a class="web-header__menu-item" href="/profile.html"
+                            >ЛИЧНЫЙ&nbsp;КАБИНЕТ</a
                         >
-                            <div class="section__mg">
-                                <div
-                                    class="section__img-container section__img-container_history"
-                                >
-                                    <img
-                                        class="section__img"
-                                        src="./assets/images/history/cat_under.jpg"
-                                        alt="Кот под одеялом"
-                                    />
-                                </div>
-                                <h2 class="title" id="subtitlte1">
-                                    Подзаголовок 1
-                                </h2>
-                                <p class="text section__text">
-                                    Терапия - область гуманной и ветеринарной
-                                    медицины, занимающаяся непосредственно
-                                    лечением патологий, облегчением состояния
-                                    больного и устранением симптомов
-                                    заболеваний.
-                                </p>
-                                <div class="section__list">
+                    </li>
+                    <li class="web-header__dropdown-link">
+                        <a
+                            class="web-header__menu-item"
+                            href="/file-services.html"
+                            >О&nbsp;НАС</a
+                        >
+                        <div class="web-header__dropdown-menu">
+                            <a href="/file-services.html">Услуги и цены</a>
+                            <a href="/team.html">Коллектив</a>
+                            <a href="./history.html">История компании</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a
+                            class="web-header__menu-item"
+                            href="/news-and-discounts.html"
+                            >НОВОСТИ&nbsp;И&nbsp;АКЦИИ</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="web-header__menu-item"
+                            href="/map-contacts.html"
+                            >КОНТАКТЫ</a
+                        >
+                    </li>
+                    <li>
+                        <a class="web-header__menu-item" href="/blog.html"
+                            >БЛОГ</a
+                        >
+                    </li>
+                </ul>
+                <div class="burger" role="navigation">
+                    <input type="checkbox" class="burger__checkbox" />
+                    <div class="burger__icon" id="menuToggle"></div>
+                    <ul class="burger__menu" id="menu">
+                        <li><a href="/profile.html">ЛИЧНЫЙ&nbsp;КАБИНЕТ</a></li>
+                        <li>
+                            <a href="./file-services.html"
+                                >УСЛУГИ&nbsp;И&nbsp;ЦЕНЫ</a
+                            >
+                        </li>
+                        <li><a href="/team.html">КОЛЛЕКТИВ</a></li>
+                        <li>
+                            <a href="/history.html">ИСТОРИЯ&nbsp;КОМПАНИИ</a>
+                        </li>
+                        <li>
+                            <a href="/news-and-discounts.html"
+                                >НОВОСТИ&nbsp;И&nbsp;АКЦИИ</a
+                            >
+                        </li>
+                        <li><a href="./map-contacts.html">КОНТАКТЫ</a></li>
+                        <li><a href="/blog.html">БЛОГ</a></li>
+                    </ul>
+                </div>
+        
+                <a href="#" class="web-header__location">
+                    <img
+                        class="web-header__location-img"
+                        src="/assets/images/landing/ico/location.svg"
+                        alt="location marker"
+                    />
+                    <p class="web-header__location-text">ВОЛГОГРАД</p>
+                </a>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="history section">
+                    <a class="breadcrumbs" href="./index.html">
+                        <div class="breadcrumps__arrow"></div>
+                        <p class="breadcrumps__title">Назад</p>
+                    </a>
+                    <div class="section__row">
+                        <div class="section__aside section__title">
+                            <h1 class="section__mg main-title">История компании</h1>
+                            <div class="section__nav">
+                                <ul class="section__nav-items">
+                                    <li class="section__nav-item">
+                                        <a class="nav-link link" href="#subtitlte1"
+                                            >Подзаголовок 1</a
+                                        >
+                                    </li>
+                                    <li class="section__nav-item">
+                                        <a class="nav-link link" href="#subtitlte2"
+                                            >Подзаголовок 2</a
+                                        >
+                                    </li>
+                                    <li class="section__nav-item">
+                                        <a class="nav-link link" href="#subtitlte3"
+                                            >Подзаголовок 3</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="section__part">
+                            <article
+                                class="section__article section__article_history"
+                            >
+                                <div class="section__mg">
+                                    <div
+                                        class="section__img-container section__img-container_history"
+                                    >
+                                        <img
+                                            class="section__img"
+                                            src="./assets/images/history/cat_under.jpg"
+                                            alt="Кот под одеялом"
+                                        />
+                                    </div>
+                                    <h2 class="title" id="subtitlte1">
+                                        Подзаголовок 1
+                                    </h2>
                                     <p class="text section__text">
-                                        Терапевтическое отделение клиники
-                                        Айболит занимается диагностикой и
-                                        лечением следующих болезней:
+                                        Терапия - область гуманной и ветеринарной
+                                        медицины, занимающаяся непосредственно
+                                        лечением патологий, облегчением состояния
+                                        больного и устранением симптомов
+                                        заболеваний.
                                     </p>
-                                    <ul class="text">
-                                        <li class="text__nar">
-                                            органов пищеварения;
-                                        </li>
-                                        <li class="text__nar">
-                                            органов сердечно-сосудистой системы;
-                                        </li>
-                                        <li class="text__nar">
-                                            органов дыхательной системы;
-                                        </li>
-                                        <li class="text__nar">
-                                            нервной системы;
-                                        </li>
-                                        <li class="text__nar">
-                                            органов мочевыделительной системы;
-                                        </li>
-                                        <li class="text__nar">
-                                            эндокринной системы;
-                                        </li>
-                                        <li class="text__nar">
-                                            нарушения обмена веществ;
-                                        </li>
-                                        <li class="text__nar">
-                                            кожи и ее производных;
-                                        </li>
-                                        <li class="text__nar">
-                                            органов чувств;
-                                        </li>
-                                        <li class="text__nar">
-                                            репродуктивной области;
-                                        </li>
-                                        <li class="text__nar">
-                                            инфекционной и инвазионной природы;
-                                        </li>
-                                        <li class="text__nar">
-                                            токсикологической природы.
-                                        </li>
-                                    </ul>
+                                    <div class="section__list">
+                                        <p class="text section__text">
+                                            Терапевтическое отделение клиники
+                                            Айболит занимается диагностикой и
+                                            лечением следующих болезней:
+                                        </p>
+                                        <ul class="text">
+                                            <li class="text__nar">
+                                                органов пищеварения;
+                                            </li>
+                                            <li class="text__nar">
+                                                органов сердечно-сосудистой системы;
+                                            </li>
+                                            <li class="text__nar">
+                                                органов дыхательной системы;
+                                            </li>
+                                            <li class="text__nar">
+                                                нервной системы;
+                                            </li>
+                                            <li class="text__nar">
+                                                органов мочевыделительной системы;
+                                            </li>
+                                            <li class="text__nar">
+                                                эндокринной системы;
+                                            </li>
+                                            <li class="text__nar">
+                                                нарушения обмена веществ;
+                                            </li>
+                                            <li class="text__nar">
+                                                кожи и ее производных;
+                                            </li>
+                                            <li class="text__nar">
+                                                органов чувств;
+                                            </li>
+                                            <li class="text__nar">
+                                                репродуктивной области;
+                                            </li>
+                                            <li class="text__nar">
+                                                инфекционной и инвазионной природы;
+                                            </li>
+                                            <li class="text__nar">
+                                                токсикологической природы.
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div class="section__mg">
-                                <h2 class="title" id="subtitlte2">
-                                    Подзаголовок 2
-                                </h2>
-                                <p class="text section__text">
-                                    В нашей клинике имеются как врачи-терапевты
-                                    общей практики, так и узкие специалисты по
-                                    ряду перечисленных областей, что дает
-                                    возможность излечивать тяжелые и редкие
-                                    случаи патологий.
-                                </p>
-                                <div
-                                    class="section__img-container history__img"
-                                >
-                                    <img
-                                        class="section__img section__img_history"
-                                        src="./assets/images/history/kitty.jpg"
-                                        alt="Котенок на желтом фоне"
-                                    />
-                                    <img
-                                        class="section__img section__img_history"
-                                        src="./assets/images/history/bulldog.jpg"
-                                        alt="Французский бульдог на желтом фоне"
-                                    />
-                                </div>
-                                <p class="text section__text">
-                                    Врач-терапевт подходит к лечению животного
-                                    комплексно, предварительно изучив его
-                                    анамнез, учитывая возраст, пол, породу,
-                                    наличие хронических болезней, условия
-                                    содержания, типа кормления, оценив общее
-                                    состояние питомца, полностью осмотрев его и
-                                    назначив необходимую диагностику и
-                                    соответствующее лечение.
-                                </p>
-                                <p class="text section__text">
-                                    Врачи клиники имеют широкий спектр
-                                    диагностических возможностей, что является
-                                    идеальным условием для постановки точного
-                                    диагноза, а значит и назначения того
-                                    лечения, которое наиболее эффективно
-                                    справится с данным конкретным клиническим
-                                    случаем.
-                                </p>
-                                <div class="section__list">
+    
+                                <div class="section__mg">
+                                    <h2 class="title" id="subtitlte2">
+                                        Подзаголовок 2
+                                    </h2>
                                     <p class="text section__text">
-                                        Некоторую диагностику можно провести тут
-                                        же на месте в течение буквально
-                                        нескольких минут, что немаловажно для
-                                        экстренных случаев и значительно
-                                        экономят время владельцам:
+                                        В нашей клинике имеются как врачи-терапевты
+                                        общей практики, так и узкие специалисты по
+                                        ряду перечисленных областей, что дает
+                                        возможность излечивать тяжелые и редкие
+                                        случаи патологий.
                                     </p>
-                                    <ul class="text">
-                                        <li class="text__nar">
-                                            гематологический и биохимический
-                                            анализы крови;
-                                        </li>
-                                        <li class="text__nar">
-                                            исследование Т4 и кортизол;
-                                        </li>
-                                        <li class="text__nar">
-                                            анализ газов крови;
-                                        </li>
-                                        <li class="text__nar">рентген;</li>
-                                        <li class="text__nar">
-                                            ультразвуковое исследование брюшной
-                                            полости и сердца;
-                                        </li>
-                                        <li class="text__nar">
-                                            микроскопия мазков и соскобов;
-                                        </li>
-                                        <li class="text__nar">
-                                            люминесцентный тест на лишай;
-                                        </li>
-                                        <li class="text__nar">
-                                            экспресс-анализы на основные
-                                            вирусные заболевания.
-                                        </li>
-                                    </ul>
+                                    <div
+                                        class="section__img-container history__img"
+                                    >
+                                        <img
+                                            class="section__img section__img_history"
+                                            src="./assets/images/history/kitty.jpg"
+                                            alt="Котенок на желтом фоне"
+                                        />
+                                        <img
+                                            class="section__img section__img_history"
+                                            src="./assets/images/history/bulldog.jpg"
+                                            alt="Французский бульдог на желтом фоне"
+                                        />
+                                    </div>
+                                    <p class="text section__text">
+                                        Врач-терапевт подходит к лечению животного
+                                        комплексно, предварительно изучив его
+                                        анамнез, учитывая возраст, пол, породу,
+                                        наличие хронических болезней, условия
+                                        содержания, типа кормления, оценив общее
+                                        состояние питомца, полностью осмотрев его и
+                                        назначив необходимую диагностику и
+                                        соответствующее лечение.
+                                    </p>
+                                    <p class="text section__text">
+                                        Врачи клиники имеют широкий спектр
+                                        диагностических возможностей, что является
+                                        идеальным условием для постановки точного
+                                        диагноза, а значит и назначения того
+                                        лечения, которое наиболее эффективно
+                                        справится с данным конкретным клиническим
+                                        случаем.
+                                    </p>
+                                    <div class="section__list">
+                                        <p class="text section__text">
+                                            Некоторую диагностику можно провести тут
+                                            же на месте в течение буквально
+                                            нескольких минут, что немаловажно для
+                                            экстренных случаев и значительно
+                                            экономят время владельцам:
+                                        </p>
+                                        <ul class="text">
+                                            <li class="text__nar">
+                                                гематологический и биохимический
+                                                анализы крови;
+                                            </li>
+                                            <li class="text__nar">
+                                                исследование Т4 и кортизол;
+                                            </li>
+                                            <li class="text__nar">
+                                                анализ газов крови;
+                                            </li>
+                                            <li class="text__nar">рентген;</li>
+                                            <li class="text__nar">
+                                                ультразвуковое исследование брюшной
+                                                полости и сердца;
+                                            </li>
+                                            <li class="text__nar">
+                                                микроскопия мазков и соскобов;
+                                            </li>
+                                            <li class="text__nar">
+                                                люминесцентный тест на лишай;
+                                            </li>
+                                            <li class="text__nar">
+                                                экспресс-анализы на основные
+                                                вирусные заболевания.
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div class="section__mg">
-                                <h2 class="title" id="subtitlte3">
-                                    Подзаголовок 3
-                                </h2>
-                                <p class="text section__text">
-                                    Большинство исследований, требующих седации
-                                    (эндоскопия, МРТ, лапароскопия), так же
-                                    доступны в течение суток. Более сложные
-                                    анализы, такие как бактериологический посев,
-                                    гормоны, гистологическое исследование мы
-                                    направляем в дистанционную лабораторию.
-                                </p>
-                                <p class="text section__text">
-                                    Получив результаты исследований врач
-                                    приступает к анализу причин и механизмов
-                                    развития болезни и назначает лечение. Оно
-                                    может быть медикаментозным (домашним или
-                                    стационарным) или оперативным (экстренным
-                                    или плановым).
-                                </p>
-                                <p class="text section__text">
-                                    Эффективность терапии в большой степени
-                                    зависит и от владельца животного, ведь
-                                    именно ему необходимо будет соблюдать
-                                    предписания врача, вовремя давать препараты
-                                    или ставить уколы, следить за развитием
-                                    динамики и симптомов, чтобы вовремя
-                                    оповестить врача о происходящих изменениях,
-                                    для своевременной коррекции лечения.
-                                </p>
-                                <p class="text section__text">
-                                    Кроме лечения терапевты занимаются и
-                                    профилактикой заболеваний. Доктора с
-                                    удовольствием расскажут вам основы
-                                    выращивания, содержания и кормления питомца,
-                                    графики дегельминтизаций и прививок. Оформят
-                                    ветеринарный паспорт и чипируют ваше
-                                    животное.
-                                </p>
-                            </div>
-                        </article>
+    
+                                <div class="section__mg">
+                                    <h2 class="title" id="subtitlte3">
+                                        Подзаголовок 3
+                                    </h2>
+                                    <p class="text section__text">
+                                        Большинство исследований, требующих седации
+                                        (эндоскопия, МРТ, лапароскопия), так же
+                                        доступны в течение суток. Более сложные
+                                        анализы, такие как бактериологический посев,
+                                        гормоны, гистологическое исследование мы
+                                        направляем в дистанционную лабораторию.
+                                    </p>
+                                    <p class="text section__text">
+                                        Получив результаты исследований врач
+                                        приступает к анализу причин и механизмов
+                                        развития болезни и назначает лечение. Оно
+                                        может быть медикаментозным (домашним или
+                                        стационарным) или оперативным (экстренным
+                                        или плановым).
+                                    </p>
+                                    <p class="text section__text">
+                                        Эффективность терапии в большой степени
+                                        зависит и от владельца животного, ведь
+                                        именно ему необходимо будет соблюдать
+                                        предписания врача, вовремя давать препараты
+                                        или ставить уколы, следить за развитием
+                                        динамики и симптомов, чтобы вовремя
+                                        оповестить врача о происходящих изменениях,
+                                        для своевременной коррекции лечения.
+                                    </p>
+                                    <p class="text section__text">
+                                        Кроме лечения терапевты занимаются и
+                                        профилактикой заболеваний. Доктора с
+                                        удовольствием расскажут вам основы
+                                        выращивания, содержания и кормления питомца,
+                                        графики дегельминтизаций и прививок. Оформят
+                                        ветеринарный паспорт и чипируют ваше
+                                        животное.
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+
+        </main>
+        <footer class="web-footer">
+            <div class="web-footer__container">
+                <div class="web-footer__nav footer-nav">
+                    <div class="footer-nav__logo">
+                        <a
+                            href="index.html"
+                            class="footer-nav__logo-container landing-logo"
+                        >
+                            <img
+                                src="/assets/images/landing/ico/logo-round.svg"
+                                alt="Company logo"
+                                class="footer-nav__logo-img"
+                            />
+                            <div>
+                                <p class="footer-nav__title">Айболит</p>
+                                <p class="footer-nav__subtitle">
+                                    ветеринарная клиника
+                                </p>
+                            </div></a
+                        >
+                    </div>
+                    <div class="footer-nav__nav-items">
+                        <div class="footer-nav__nav-item">
+                            <a href="#" class="footer-nav__nav-item-link"
+                                >Политика конфи&shy;ден&shy;циаль&shy;ности в
+                                отношении обработки персо&shy;нальных данных</a
+                            >
+                        </div>
+                        <div class="footer-nav__nav-item">
+                            <a
+                                href="/index.html"
+                                class="footer-nav__nav-item-link"
+                                >Главная
+                            </a>
+                            <a
+                                href="/file-services.html"
+                                class="footer-nav__nav-item-link"
+                                >Услуги и цены
+                            </a>
+                            <a
+                                href="/history.html"
+                                class="footer-nav__nav-item-link"
+                                >История компании
+                            </a>
+                            <a
+                                href="/team.html"
+                                class="footer-nav__nav-item-link"
+                                >Наши специа&shy;листы
+                            </a>
+                            <a href="#" class="footer-nav__nav-item-link"
+                                >Вакансии
+                            </a>
+                            <a href="#" class="footer-nav__nav-item-link"
+                                >Реквизиты
+                            </a>
+                            <a
+                                href="/order_online_inactive.html"
+                                class="footer-nav__nav-item-link"
+                                >Онлайн-оплата</a
+                            >
+                        </div>
+                        <div class="footer-nav__nav-item">
+                            <a href="#" class="footer-nav__nav-item-link"
+                                >Отзывы</a
+                            >
+                            <a
+                                href="/map-contacts.html"
+                                class="footer-nav__nav-item-link"
+                                >Контакты</a
+                            >
+                            <a href="#" class="footer-nav__nav-item-link"
+                                >Груминг-салон</a
+                            >
+                            <a href="#" class="footer-nav__nav-item-link"
+                                >Косметика</a
+                            >
+                            <a
+                                href="/news-and-discounts.html"
+                                class="footer-nav__nav-item-link"
+                                >Новости и акции</a
+                            >
+                            <a
+                                href="/blog.html"
+                                class="footer-nav__nav-item-link"
+                                >Блог</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="web-footer__contacts footer-contacts">
+                    <div class="footer-contacts__apps web-apps">
+                        <a href="#">
+                            <img
+                                src="/assets/images/landing/appstore.png"
+                                alt="Загрузите в AppStore"
+                                class="web-apps__app"
+                        /></a>
+                        <a href="#">
+                            <img
+                                src="/assets/images/landing/googleplay.png"
+                                alt="Доступно в Google Play"
+                                class="web-apps__app"
+                        /></a>
+                    </div>
+                    <div class="footer-contacts__socials web-socials">
+                        <a href="#">
+                            <img
+                                src="/assets/images/landing/social-ico/inst.svg"
+                                alt="Instagram link" /></a
+                        ><a href="#"
+                            ><img
+                                src="/assets/images/landing/social-ico/fb.svg"
+                                alt="Facebook link" /></a
+                        ><a href="#"
+                            ><img
+                                src="/assets/images/landing/social-ico/vk.svg"
+                                alt="VK link" /></a
+                        ><a href="#"
+                            ><img
+                                src="/assets/images/landing/social-ico/youtube.svg"
+                                alt="Youtube link"
+                        /></a>
+                    </div>
+                    <div class="footer-contacts__sites">
+                        <a href="https://aibolit34.ru">aibolit34.ru</a
+                        ><a href="https://aibolit34@gmail.com"
+                            >aibolit34@gmail.com</a
+                        >
+                    </div>
+                    <div class="footer-contacts__credit">
+                        <p>
+                            Made with
+                            <img
+                                src="/assets/images/landing/ico/black-heart.svg"
+                                alt=""
+                            />
+                            from UnitBean
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
