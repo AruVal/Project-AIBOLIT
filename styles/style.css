@@ -1236,7 +1236,6 @@ img {
   position: relative;
   max-width: 88.5vw;
   margin-left: 11.5vw;
-  margin-left: 11.5vw;
   overflow: hidden;
 }
 .slider-container__btn-next {
@@ -1954,4 +1953,4 @@ img {
 .review__answer {
   display: flex;
   gap: clamp(20px, 1.56vw, 30px);
-}/*# sourceMappingURL=style.css.map */
+}
